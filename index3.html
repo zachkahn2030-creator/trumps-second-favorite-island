@@ -1,0 +1,3697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+    Trump's Second Favorite Island | Zach Kahn
+</title>
+
+
+<style>
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background: #f7f5ef;
+    color: #151515;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* =========================================================
+   PROGRESS BAR
+========================================================= */
+
+.progress {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    height: 4px;
+
+    width: 0%;
+
+    background: white;
+
+    z-index: 9999;
+
+    mix-blend-mode: difference;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 25px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.20),
+            rgba(0,0,0,.75)
+        ),
+        url("images/guambeach.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    width: 100%;
+
+    max-width: 1150px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.kicker {
+    margin-bottom: 35px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 5px;
+}
+
+.hero h1 {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size:
+        clamp(
+            60px,
+            10vw,
+            145px
+        );
+
+    line-height: .87;
+
+    letter-spacing: -6px;
+}
+
+.subtitle {
+    max-width: 760px;
+
+    margin: 40px auto 0;
+
+    font-size: 22px;
+
+    line-height: 1.55;
+}
+
+.byline {
+    margin-top: 28px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+}
+
+.original-link {
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding:
+        14px
+        22px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.6);
+
+    border-radius: 100px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    transition:
+        background .25s ease,
+        color .25s ease;
+}
+
+.original-link:hover {
+    background: white;
+
+    color: black;
+}
+
+.scroll-indicator {
+    position: absolute;
+
+    bottom: 25px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    animation:
+        bounce
+        1.7s
+        infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(10px);
+    }
+
+}
+
+
+/* =========================================================
+   STANDARD ARTICLE TEXT
+========================================================= */
+
+.article {
+    width: 100%;
+
+    max-width: 720px;
+
+    margin: auto;
+
+    padding:
+        110px
+        25px;
+}
+
+.article p {
+    margin:
+        0
+        0
+        34px;
+
+    font-size: 20px;
+
+    line-height: 1.82;
+}
+
+.article h2 {
+    margin:
+        110px
+        0
+        35px;
+
+    font-family: Arial, sans-serif;
+
+    font-size:
+        clamp(
+            42px,
+            6vw,
+            65px
+        );
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.article h2:first-child {
+    margin-top: 0;
+}
+
+.big-question {
+    margin:
+        80px
+        0 !important;
+
+    font-size:
+        30px !important;
+
+    line-height:
+        1.45 !important;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   QUIET TEXT-ONLY MOMENTS
+========================================================= */
+
+.text-beat {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding:
+        80px
+        25px;
+
+    background:
+        #f7f5ef;
+
+    text-align: center;
+}
+
+.text-beat.dark {
+    background:
+        #101010;
+
+    color: white;
+}
+
+.text-beat-inner {
+    max-width: 900px;
+}
+
+.text-beat .small {
+    margin-bottom: 30px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 5px;
+
+    opacity: .6;
+}
+
+.text-beat h2 {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size:
+        clamp(
+            50px,
+            8vw,
+            105px
+        );
+
+    line-height: .95;
+
+    letter-spacing: -5px;
+}
+
+
+/* =========================================================
+   GUAM OPENING
+========================================================= */
+
+.guam-opening {
+    min-height: 120vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+.guam-opening h2 {
+    margin:
+        0
+        0
+        80px;
+
+    font-size:
+        clamp(
+            85px,
+            14vw,
+            175px
+        );
+}
+
+.guam-opening p {
+    margin:
+        40px
+        0;
+
+    font-size: 27px;
+}
+
+.guam-opening .punch {
+    margin-top: 100px;
+
+    font-size: 36px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   REVEALS
+========================================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform:
+        translateY(65px);
+
+    transition:
+        opacity
+        .9s
+        ease,
+
+        transform
+        .9s
+        ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+
+    transform:
+        translateY(0);
+}
+
+.zoom {
+    opacity: 0;
+
+    transform:
+        scale(.93);
+
+    transition:
+        opacity
+        1.1s
+        ease,
+
+        transform
+        1.1s
+        ease;
+}
+
+.zoom.visible {
+    opacity: 1;
+
+    transform:
+        scale(1);
+}
+
+
+/* =========================================================
+   FULL-SCREEN PHOTO
+========================================================= */
+
+.full-photo {
+    height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.full-photo::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            transparent 30%,
+            rgba(0,0,0,.82)
+        );
+}
+
+.photo-caption {
+    width: 100%;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    padding:
+        50px
+        25px;
+
+    position: relative;
+
+    z-index: 2;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   REAL PACIFIC MAP
+========================================================= */
+
+.map-story {
+    height: 350vh;
+
+    background:
+        #061b29;
+
+    color: white;
+}
+
+.map-sticky {
+    height: 100vh;
+
+    position: sticky;
+
+    top: 0;
+
+    overflow: hidden;
+}
+
+.map-heading {
+    width: 90%;
+
+    position: absolute;
+
+    top: 7%;
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    z-index: 10;
+
+    text-align: center;
+}
+
+.map-heading h2 {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size:
+        clamp(
+            32px,
+            5vw,
+            65px
+        );
+
+    letter-spacing: -2px;
+}
+
+.map-heading p {
+    margin-top: 15px;
+
+    font-size: 17px;
+
+    opacity: .7;
+}
+
+.map-wrap {
+    width: 100%;
+
+    height: 100%;
+
+    position: absolute;
+
+    inset: 0;
+}
+
+.map-wrap svg {
+    width: 100%;
+
+    height: 100%;
+}
+
+.ocean-text {
+    font-family: Arial, sans-serif;
+
+    font-size: 20px;
+
+    letter-spacing: 10px;
+
+    fill:
+        rgba(
+            255,
+            255,
+            255,
+            .17
+        );
+}
+
+.land {
+    fill: #9da68e;
+
+    stroke: #d4d9ca;
+
+    stroke-width: 1;
+}
+
+.us-land {
+    fill: #b7bea7;
+}
+
+.guam-marker {
+    fill: white;
+
+    filter:
+        drop-shadow(
+            0
+            0
+            10px
+            white
+        );
+}
+
+.map-label {
+    fill: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.map-small-label {
+    fill:
+        rgba(
+            255,
+            255,
+            255,
+            .55
+        );
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+.route-path {
+    fill: none;
+
+    stroke:
+        rgba(
+            255,
+            255,
+            255,
+            .65
+        );
+
+    stroke-width: 3;
+
+    stroke-dasharray: 10 10;
+}
+
+.boat-map {
+    font-size: 42px;
+}
+
+.map-message {
+    width: 90%;
+
+    max-width: 760px;
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 7%;
+
+    transform:
+        translateX(-50%);
+
+    text-align: center;
+
+    font-size: 24px;
+
+    line-height: 1.5;
+
+    opacity: 0;
+}
+
+.map-note {
+    position: absolute;
+
+    left: 25px;
+    bottom: 20px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    opacity: .45;
+}
+
+
+/* =========================================================
+   MONEY REVEAL
+========================================================= */
+
+.money-story {
+    background:
+        #101010;
+
+    color: white;
+}
+
+.money-screen {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding:
+        50px
+        25px;
+
+    text-align: center;
+}
+
+.money-year {
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 5px;
+}
+
+.money-number {
+    margin:
+        20px
+        0;
+
+    font-family: Arial, sans-serif;
+
+    font-size:
+        clamp(
+            100px,
+            18vw,
+            240px
+        );
+
+    font-weight: bold;
+
+    line-height: .9;
+
+    letter-spacing: -9px;
+}
+
+.money-description {
+    max-width: 650px;
+
+    font-size: 23px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   GRAPHICS
+========================================================= */
+
+.graphic-section {
+    width: 100%;
+
+    padding:
+        130px
+        25px;
+
+    background:
+        #e9e7e1;
+}
+
+.graphic {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.graphic img {
+    width: 100%;
+
+    background: white;
+
+    box-shadow:
+        0
+        15px
+        60px
+        rgba(
+            0,
+            0,
+            0,
+            .15
+        );
+}
+
+.caption {
+    max-width: 720px;
+
+    margin:
+        24px
+        auto
+        0;
+
+    color: #555;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   MONEY FLOW
+========================================================= */
+
+.flow {
+    padding:
+        140px
+        25px;
+
+    background:
+        #111;
+
+    color: white;
+
+    text-align: center;
+}
+
+.flow-title {
+    max-width: 900px;
+
+    margin:
+        0
+        auto
+        80px;
+
+    font-family: Arial, sans-serif;
+
+    font-size:
+        clamp(
+            45px,
+            7vw,
+            85px
+        );
+
+    line-height: .95;
+
+    letter-spacing: -4px;
+}
+
+.flow-row {
+    max-width: 1050px;
+
+    margin:
+        25px
+        auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        auto
+        1fr
+        auto
+        1fr;
+
+    gap: 20px;
+
+    align-items: center;
+}
+
+.flow-box {
+    padding:
+        30px
+        15px;
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .25
+        );
+
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+}
+
+.flow-box strong {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 30px;
+}
+
+.flow-arrow {
+    font-size: 30px;
+
+    opacity: .45;
+}
+
+
+/* =========================================================
+   STICKY MONEY
+========================================================= */
+
+.sticky-money {
+    height: 260vh;
+
+    background: black;
+
+    color: white;
+}
+
+.sticky-money-inner {
+    height: 100vh;
+
+    position: sticky;
+
+    top: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.sticky-money img {
+    width: 100%;
+
+    height: 100%;
+
+    position: absolute;
+
+    inset: 0;
+
+    object-fit: cover;
+
+    opacity: .18;
+}
+
+.sticky-money-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(
+            0,
+            0,
+            0,
+            .45
+        );
+}
+
+.sticky-money-text {
+    width: 90%;
+
+    max-width: 950px;
+
+    position: relative;
+
+    z-index: 3;
+
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+
+    font-size:
+        clamp(
+            50px,
+            8vw,
+            110px
+        );
+
+    font-weight: bold;
+
+    line-height: .95;
+
+    letter-spacing: -5px;
+
+    opacity: 0;
+}
+
+
+/* =========================================================
+   97.83%
+========================================================= */
+
+.stat {
+    min-height: 115vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding:
+        50px
+        25px;
+
+    background:
+        #050505;
+
+    color: white;
+
+    text-align: center;
+}
+
+.stat-number {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size:
+        clamp(
+            105px,
+            19vw,
+            260px
+        );
+
+    font-weight: bold;
+
+    line-height: .85;
+
+    letter-spacing: -11px;
+}
+
+.stat p {
+    max-width: 700px;
+
+    margin:
+        50px
+        auto
+        0;
+
+    font-size: 25px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   DONOR INTRO
+========================================================= */
+
+.donor-intro {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding:
+        100px
+        25px;
+
+    background:
+        #111;
+
+    color: white;
+
+    text-align: center;
+}
+
+.donor-intro-number {
+    font-family: Arial, sans-serif;
+
+    font-size:
+        clamp(
+            130px,
+            23vw,
+            330px
+        );
+
+    font-weight: bold;
+
+    line-height: .8;
+
+    letter-spacing: -15px;
+}
+
+.donor-intro h2 {
+    margin:
+        40px
+        0
+        20px;
+
+    font-family: Arial, sans-serif;
+
+    font-size:
+        clamp(
+            40px,
+            6vw,
+            75px
+        );
+
+    letter-spacing: -3px;
+}
+
+.donor-intro p {
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   DONOR LIST
+========================================================= */
+
+.donors {
+    background:
+        #f5f2ea;
+
+    padding-bottom:
+        130px;
+}
+
+.donor-group {
+    padding:
+        130px
+        25px;
+
+    border-bottom:
+        1px solid
+        #d4d0c7;
+}
+
+.donor-group:nth-child(even) {
+    background:
+        #ebe7dd;
+}
+
+.donor-group-inner {
+    max-width: 1050px;
+
+    margin: auto;
+}
+
+.donor-category-label {
+    margin-bottom: 15px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+    opacity: .5;
+}
+
+.donor-category h2 {
+    margin:
+        0
+        0
+        10px;
+
+    font-family: Arial, sans-serif;
+
+    font-size:
+        clamp(
+            45px,
+            7vw,
+            85px
+        );
+
+    line-height: .95;
+
+    letter-spacing: -4px;
+}
+
+.donor-count {
+    margin-bottom: 70px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    opacity: .55;
+}
+
+.donor-name {
+    display: grid;
+
+    grid-template-columns:
+        65px
+        1fr;
+
+    padding:
+        18px
+        0;
+
+    border-top:
+        1px solid
+        rgba(
+            0,
+            0,
+            0,
+            .12
+        );
+
+    font-family: Arial, sans-serif;
+
+    font-size:
+        clamp(
+            18px,
+            2.5vw,
+            26px
+        );
+
+    line-height: 1.35;
+}
+
+.donor-name span {
+    font-size: 12px;
+
+    opacity: .4;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   115 → 193
+========================================================= */
+
+.total-reveal {
+    min-height: 140vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding:
+        100px
+        25px;
+
+    background:
+        #111;
+
+    color: white;
+
+    text-align: center;
+}
+
+.total-inner {
+    max-width: 900px;
+}
+
+.total-number {
+    font-family: Arial, sans-serif;
+
+    font-size:
+        clamp(
+            110px,
+            20vw,
+            270px
+        );
+
+    font-weight: bold;
+
+    line-height: .8;
+
+    letter-spacing: -12px;
+}
+
+.total-label {
+    margin-top: 30px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    opacity: .6;
+}
+
+.total-divider {
+    width: 1px;
+
+    height: 150px;
+
+    margin:
+        70px
+        auto;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .35
+        );
+}
+
+
+/* =========================================================
+   CONCLUSION
+========================================================= */
+
+.conclusion {
+    padding:
+        150px
+        25px;
+
+    background:
+        #111;
+
+    color: white;
+}
+
+.conclusion-inner {
+    max-width: 950px;
+
+    margin: auto;
+}
+
+.conclusion-line {
+    margin:
+        80px
+        0;
+
+    font-family: Arial, sans-serif;
+
+    font-size:
+        clamp(
+            40px,
+            6vw,
+            75px
+        );
+
+    font-weight: bold;
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+}
+
+
+/* =========================================================
+   END
+========================================================= */
+
+.end {
+    padding:
+        160px
+        25px;
+
+    background:
+        #050505;
+
+    color: white;
+
+    text-align: center;
+}
+
+.end-inner {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.end-label {
+    margin-bottom: 40px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+    opacity: .55;
+}
+
+.end h2 {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size:
+        clamp(
+            50px,
+            8vw,
+            100px
+        );
+
+    line-height: .95;
+
+    letter-spacing: -5px;
+}
+
+.end p {
+    max-width: 650px;
+
+    margin:
+        35px
+        auto;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+}
+
+.end-button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding:
+        18px
+        28px;
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .65
+        );
+
+    border-radius: 100px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    transition:
+        .25s ease;
+}
+
+.end-button:hover {
+    background: white;
+
+    color: black;
+}
+
+.end-credit {
+    margin-top: 100px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+
+    letter-spacing: 2px;
+
+    opacity: .45;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:700px) {
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .article p {
+        font-size: 18px;
+    }
+
+    .guam-opening p {
+        font-size: 22px;
+    }
+
+    .money-number {
+        letter-spacing: -5px;
+    }
+
+    .stat-number {
+        letter-spacing: -6px;
+    }
+
+    .flow-row {
+        grid-template-columns: 1fr;
+    }
+
+    .flow-arrow {
+        transform:
+            rotate(90deg);
+    }
+
+    .donor-name {
+        grid-template-columns:
+            45px
+            1fr;
+    }
+
+    .donor-intro-number {
+        letter-spacing: -8px;
+    }
+
+    .total-number {
+        letter-spacing: -7px;
+    }
+
+    .map-message {
+        font-size: 18px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ======================================================
+     READING PROGRESS
+====================================================== -->
+
+<div
+    class="progress"
+    id="progress"
+></div>
+
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="kicker">
+            Politics • Money • Guam
+        </div>
+
+
+        <h1>
+            Trump's Second Favorite Island
+        </h1>
+
+
+        <div class="subtitle">
+
+            Republican donors funnel millions through Guam,
+            spotlighting the need for campaign finance reform.
+
+        </div>
+
+
+        <div class="byline">
+            By Zach Kahn
+        </div>
+
+
+        <a
+            class="original-link"
+            href="https://zachkahn.substack.com/p/trumps-second-favorite-island"
+            target="_blank"
+            rel="noopener"
+        >
+            READ THE ORIGINAL ARTICLE ↗
+        </a>
+
+    </div>
+
+
+    <div class="scroll-indicator">
+        Scroll ↓
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     GUAM
+====================================================== -->
+
+<section class="article guam-opening">
+
+    <h2 class="reveal">
+        Guam.
+    </h2>
+
+
+    <p class="reveal">
+
+        A U.S. territory in Micronesia
+        that 168,000 people call home.
+
+    </p>
+
+
+    <p class="reveal">
+
+        A World War II battleground
+        in the Western Pacific.
+
+    </p>
+
+
+    <p class="reveal">
+
+        An island known for its warm climate,
+        beautiful beaches and rich Chamorro culture.
+
+    </p>
+
+
+    <p class="punch reveal">
+
+        Turns out Guam also is a paradise
+        for the Republican Party.
+
+    </p>
+
+</section>
+
+
+
+<!-- ======================================================
+     GUAM PHOTO
+====================================================== -->
+
+<section
+    class="full-photo"
+    style="
+        background-image:
+        url('images/guam.jpg');
+    "
+>
+
+    <div class="photo-caption reveal">
+
+        Guam sits in the western Pacific,
+        thousands of miles from the continental United States.
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     TEXT PAUSE
+====================================================== -->
+
+<section class="text-beat">
+
+    <div class="text-beat-inner">
+
+        <div class="small reveal">
+            Remember
+        </div>
+
+
+        <h2 class="reveal">
+            Guam can't vote for president.
+        </h2>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     REAL MAP
+====================================================== -->
+
+<section
+    class="map-story"
+    id="mapStory"
+>
+
+<div class="map-sticky">
+
+
+    <div class="map-heading">
+
+        <h2>
+            About 6,000 miles away.
+        </h2>
+
+        <p>
+            Scroll to cross the Pacific.
+        </p>
+
+    </div>
+
+
+
+    <div class="map-wrap">
+
+        <!--
+            Simplified geographic SVG.
+
+            The map is centered on the Pacific.
+            Mainland North America appears on the right.
+            East Asia / Japan / Philippines appear left.
+            Guam is marked in the western Pacific.
+        -->
+
+        <svg
+            viewBox="0 0 1200 700"
+            preserveAspectRatio="xMidYMid slice"
+        >
+
+
+            <!-- PACIFIC -->
+
+            <rect
+                x="0"
+                y="0"
+                width="1200"
+                height="700"
+                fill="#082638"
+            />
+
+
+            <text
+                x="600"
+                y="350"
+                text-anchor="middle"
+                class="ocean-text"
+            >
+                PACIFIC OCEAN
+            </text>
+
+
+
+            <!-- EAST ASIA -->
+
+            <path
+                class="land"
+                d="
+                M0 125
+                L100 105
+                L155 130
+                L195 175
+                L215 220
+                L205 270
+                L165 305
+                L130 350
+                L80 370
+                L0 355
+                Z
+                "
+            />
+
+
+            <!-- JAPAN -->
+
+            <path
+                class="land"
+                d="
+                M205 190
+                L218 210
+                L225 235
+                L218 260
+                L207 250
+                L210 225
+                L197 205
+                Z
+                "
+            />
+
+
+            <!-- PHILIPPINES -->
+
+            <path
+                class="land"
+                d="
+                M190 330
+                L203 350
+                L198 375
+                L208 397
+                L197 420
+                L185 398
+                L190 375
+                L178 350
+                Z
+                "
+            />
+
+
+            <!-- AUSTRALIA EDGE -->
+
+            <path
+                class="land"
+                d="
+                M130 570
+                L220 540
+                L300 555
+                L350 610
+                L335 700
+                L120 700
+                Z
+                "
+            />
+
+
+            <!-- NORTH AMERICA -->
+
+            <path
+                class="land us-land"
+                d="
+                M890 80
+                L1010 60
+                L1120 90
+                L1200 135
+                L1200 390
+                L1140 370
+                L1100 330
+                L1060 300
+                L1020 285
+                L985 250
+                L950 235
+                L925 200
+                L885 180
+                L860 140
+                Z
+                "
+            />
+
+
+            <!-- WESTERN U.S. -->
+
+            <path
+                class="land us-land"
+                d="
+                M940 240
+                L1010 250
+                L1070 285
+                L1105 330
+                L1085 375
+                L1040 400
+                L1000 380
+                L965 340
+                L940 300
+                Z
+                "
+            />
+
+
+            <!-- MEXICO -->
+
+            <path
+                class="land"
+                d="
+                M1030 390
+                L1090 370
+                L1120 395
+                L1105 430
+                L1080 460
+                L1050 440
+                L1020 410
+                Z
+                "
+            />
+
+
+            <!-- HAWAII -->
+
+            <circle
+                class="land"
+                cx="760"
+                cy="400"
+                r="5"
+            />
+
+            <circle
+                class="land"
+                cx="780"
+                cy="408"
+                r="4"
+            />
+
+            <circle
+                class="land"
+                cx="798"
+                cy="415"
+                r="5"
+            />
+
+
+            <!-- GUAM -->
+
+            <circle
+                class="guam-marker"
+                cx="300"
+                cy="390"
+                r="7"
+            />
+
+
+            <text
+                x="300"
+                y="425"
+                text-anchor="middle"
+                class="map-label"
+            >
+                GUAM
+            </text>
+
+
+            <text
+                x="1015"
+                y="335"
+                text-anchor="middle"
+                class="map-label"
+            >
+                UNITED STATES
+            </text>
+
+
+            <text
+                x="225"
+                y="180"
+                class="map-small-label"
+            >
+                JAPAN
+            </text>
+
+
+            <text
+                x="145"
+                y="455"
+                class="map-small-label"
+            >
+                PHILIPPINES
+            </text>
+
+
+            <text
+                x="760"
+                y="445"
+                class="map-small-label"
+            >
+                HAWAII
+            </text>
+
+
+
+            <!-- ROUTE -->
+
+            <path
+                id="routePath"
+                class="route-path"
+                d="
+                M1010 330
+                Q650 190
+                300 390
+                "
+            />
+
+
+            <!-- BOAT -->
+
+            <text
+                id="mapBoat"
+                class="boat-map"
+                x="1010"
+                y="330"
+                text-anchor="middle"
+            >
+                ⛵
+            </text>
+
+        </svg>
+
+    </div>
+
+
+
+    <div
+        class="map-message"
+        id="mapMessage"
+    >
+
+        So why were wealthy political donors
+        sending $10,000 each to a party
+        on this distant Pacific island?
+
+    </div>
+
+
+    <div class="map-note">
+        Map is a simplified geographic illustration.
+        Route illustrates distance, not literal transportation of funds.
+    </div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     MONEY
+====================================================== -->
+
+<section class="money-story">
+
+
+    <div class="money-screen">
+
+        <div class="money-year reveal">
+            2023
+        </div>
+
+
+        <div class="money-number reveal">
+            $48
+        </div>
+
+
+        <div class="money-description reveal">
+
+            The Republican Party of Guam
+            had one donor.
+
+        </div>
+
+    </div>
+
+
+
+    <div class="money-screen">
+
+        <div class="money-year reveal">
+            2024
+        </div>
+
+
+        <div class="money-number reveal">
+            $1.93M
+        </div>
+
+
+        <div class="money-description reveal">
+
+            193 donors.
+            <br><br>
+            $10,000 each.
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ======================================================
+     GRAPH
+====================================================== -->
+
+<section class="graphic-section">
+
+    <div class="graphic zoom">
+
+        <img
+            src="images/graph.jpg"
+            alt="Chart comparing Republican Party of Guam contributions"
+        >
+
+
+        <div class="caption">
+
+            The Republican Party of Guam went from
+            one $48 donor in 2023 to 193 donors
+            contributing a combined $1.93 million in 2024.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     TEXT PAUSE
+====================================================== -->
+
+<section class="text-beat dark">
+
+    <div class="text-beat-inner">
+
+        <div class="small reveal">
+            The obvious question
+        </div>
+
+
+        <h2 class="reveal">
+            What's going on here?
+        </h2>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     MCCOURT
+====================================================== -->
+
+<main class="article">
+
+    <h2 class="reveal">
+        February 14, 2024
+    </h2>
+
+
+    <p class="reveal">
+
+        Jamie McCourt — former Los Angeles Dodgers CEO
+        and a major Trump fundraiser — donated $10,000
+        to the Republican Party of Guam.
+
+    </p>
+
+
+    <p class="reveal">
+
+        McCourt's was the first of 193 donations
+        of exactly $10,000 that GOP Guam would
+        receive in 2024.
+
+    </p>
+
+
+    <p class="reveal">
+
+        $10,000 was the maximum amount an individual
+        could contribute to a state party committee
+        for the year.
+
+    </p>
+
+
+    <p class="reveal">
+
+        And every one of those 193 contributions
+        came through the same entity:
+
+    </p>
+
+
+    <p class="big-question reveal">
+
+        Trump 47 Committee Inc.
+
+    </p>
+
+</main>
+
+
+
+<!-- ======================================================
+     TRUMP 47 IMAGE
+====================================================== -->
+
+<section class="graphic-section">
+
+    <div class="graphic zoom">
+
+        <img
+            src="images/graphic47.jpg"
+            alt="Trump 47 Committee fundraising graphic"
+        >
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     JFC EXPLANATION
+====================================================== -->
+
+<main class="article">
+
+    <h2 class="reveal">
+        What is Trump 47?
+    </h2>
+
+
+    <p class="reveal">
+
+        Trump 47 Committee Inc. was a joint fundraising
+        committee — an entity that allowed several political
+        committees to raise money together.
+
+    </p>
+
+
+    <p class="big-question reveal">
+        Think of it as a group tip jar.
+    </p>
+
+
+    <p class="reveal">
+
+        A donor could write one enormous check.
+        Trump 47 would then allocate portions of that
+        contribution among Trump's campaign, Save America PAC,
+        the Republican National Committee and participating
+        state and territorial party committees.
+
+    </p>
+
+
+    <p class="reveal">
+
+        According to the allocation formula described
+        in the original reporting, money reached state-party
+        accounts only after the donor had first contributed
+        the permitted amounts to Trump's campaign,
+        Save America PAC and the RNC.
+
+    </p>
+
+</main>
+
+
+
+<!-- ======================================================
+     FLOW
+====================================================== -->
+
+<section class="flow">
+
+    <div class="flow-title reveal">
+        Follow a maximum contribution.
+    </div>
+
+
+    <div class="flow-row reveal">
+
+        <div class="flow-box">
+
+            <strong>
+                $3,300
+            </strong>
+
+            Trump primary
+
+        </div>
+
+
+        <div class="flow-arrow">
+            →
+        </div>
+
+
+        <div class="flow-box">
+
+            <strong>
+                $3,300
+            </strong>
+
+            Trump general
+
+        </div>
+
+
+        <div class="flow-arrow">
+            →
+        </div>
+
+
+        <div class="flow-box">
+
+            <strong>
+                $5,000
+            </strong>
+
+            Save America PAC
+
+        </div>
+
+    </div>
+
+
+
+    <div class="flow-row reveal">
+
+        <div class="flow-box">
+
+            <strong>
+                Then
+            </strong>
+
+            more of the contribution
+
+        </div>
+
+
+        <div class="flow-arrow">
+            →
+        </div>
+
+
+        <div class="flow-box">
+
+            <strong>
+                RNC
+            </strong>
+
+            up to its allocation
+
+        </div>
+
+
+        <div class="flow-arrow">
+            →
+        </div>
+
+
+        <div class="flow-box">
+
+            <strong>
+                $10,000
+            </strong>
+
+            GOP Guam
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     LIMITS IMAGE
+====================================================== -->
+
+<section class="graphic-section">
+
+    <div class="graphic zoom">
+
+        <img
+            src="images/limits.jpg"
+            alt="Federal Election Commission contribution limits"
+        >
+
+
+        <div class="caption">
+
+            Federal campaign-finance rules impose
+            different contribution limits depending
+            on the recipient committee.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     TEXT PAUSE
+====================================================== -->
+
+<section class="text-beat">
+
+    <div class="text-beat-inner">
+
+        <div class="small reveal">
+            But remember
+        </div>
+
+
+        <h2 class="reveal">
+
+            These donors had already
+            maxed out their RNC contributions.
+
+        </h2>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     QUESTION
+====================================================== -->
+
+<section class="text-beat dark">
+
+    <div class="text-beat-inner">
+
+        <div class="small reveal">
+            Which leaves one question
+        </div>
+
+
+        <h2 class="reveal">
+            Where did Guam's money go?
+        </h2>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     FEC
+====================================================== -->
+
+<section class="graphic-section">
+
+    <div class="graphic zoom">
+
+        <img
+            src="images/fec.jpg"
+            alt="Federal Election Commission records for GOP Guam"
+        >
+
+
+        <div class="caption">
+
+            Federal Election Commission filings provide
+            the paper trail for the party's receipts
+            and transfers.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     STICKY FEC
+====================================================== -->
+
+<section
+    class="sticky-money"
+    id="stickyMoney"
+>
+
+    <div class="sticky-money-inner">
+
+
+        <img
+            src="images/fec.jpg"
+            alt=""
+        >
+
+
+        <div class="sticky-money-overlay"></div>
+
+
+        <div
+            class="sticky-money-text"
+            id="stickyMoneyText"
+        >
+
+            The money didn't stay in Guam.
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     97.83
+====================================================== -->
+
+<section class="stat">
+
+    <div>
+
+        <div class="stat-number reveal">
+            97.83%
+        </div>
+
+
+        <p class="reveal">
+
+            of the money received by GOP Guam
+            was subsequently transferred to
+            the Republican National Committee.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     EXPLANATION
+====================================================== -->
+
+<main class="article">
+
+    <h2 class="reveal">
+        Suspicions confirmed.
+    </h2>
+
+
+    <p class="reveal">
+
+        Following the money showed that nearly all
+        of the funds received by the Republican Party
+        of Guam subsequently went to the RNC.
+
+    </p>
+
+
+    <p class="reveal">
+
+        Transfers between national, state and territorial
+        party committees are treated differently from
+        an individual's direct contribution to a party committee.
+
+    </p>
+
+
+    <p class="big-question reveal">
+
+        But why not just give the money
+        to the RNC in the first place?
+
+    </p>
+
+
+    <p class="reveal">
+
+        The donors reaching GOP Guam through Trump 47
+        had already reached the applicable RNC contribution
+        allocation before money flowed to state-party accounts.
+
+    </p>
+
+
+    <p class="reveal">
+
+        That is what made the territorial party significant:
+        the individual donor faced a contribution limit,
+        while party committees could subsequently transfer
+        funds among affiliated committees.
+
+    </p>
+
+</main>
+
+
+
+<!-- ======================================================
+     TEXT PAUSE
+====================================================== -->
+
+<section class="text-beat dark">
+
+    <div class="text-beat-inner">
+
+        <div class="small reveal">
+            Now look at who participated
+        </div>
+
+
+        <h2 class="reveal">
+            Follow the donors.
+        </h2>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     DONOR INTRO
+====================================================== -->
+
+<section class="donor-intro">
+
+    <div>
+
+        <div class="donor-intro-number reveal">
+            115
+        </div>
+
+
+        <h2 class="reveal">
+            named in the original investigation.
+        </h2>
+
+
+        <p class="reveal">
+
+            The published story individually identified
+            115 of the 193 people who made $10,000
+            contributions to GOP Guam.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     DONORS GENERATED BY JAVASCRIPT
+====================================================== -->
+
+<div
+    class="donors"
+    id="donorContainer"
+></div>
+
+
+
+<!-- ======================================================
+     115 → 193
+====================================================== -->
+
+<section class="total-reveal">
+
+    <div class="total-inner">
+
+
+        <div class="total-number reveal">
+            115
+        </div>
+
+
+        <div class="total-label reveal">
+            individually named in the article
+        </div>
+
+
+        <div class="total-divider"></div>
+
+
+        <div class="total-number reveal">
+            193
+        </div>
+
+
+        <div class="total-label reveal">
+            total $10,000 donors
+        </div>
+
+
+        <div class="total-divider"></div>
+
+
+        <div class="total-number reveal">
+            $1.93M
+        </div>
+
+
+        <div class="total-label reveal">
+            contributed to GOP Guam in 2024
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     TAKEAWAY
+====================================================== -->
+
+<section class="conclusion">
+
+    <div class="conclusion-inner">
+
+
+        <div class="conclusion-line reveal">
+
+            It's hard to look at the donor list
+            without noticing how many names intersect
+            with political power.
+
+        </div>
+
+
+        <div class="conclusion-line reveal">
+
+            Appointees.
+
+        </div>
+
+
+        <div class="conclusion-line reveal">
+
+            Ambassadors.
+
+        </div>
+
+
+        <div class="conclusion-line reveal">
+
+            Billionaires.
+
+        </div>
+
+
+        <div class="conclusion-line reveal">
+
+            Crypto and fossil-fuel figures.
+
+        </div>
+
+
+        <div class="conclusion-line reveal">
+
+            The larger question isn't only
+            where the money started.
+
+        </div>
+
+
+        <div class="conclusion-line reveal">
+
+            It's where the money ended up.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     BEACH RETURN
+====================================================== -->
+
+<section
+    class="full-photo"
+    style="
+        background-image:
+        url('images/guambeach.jpg');
+    "
+>
+
+    <div class="photo-caption reveal">
+
+        Guam became an unlikely waypoint
+        in a much larger national campaign-finance story.
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     FINAL TEXT
+====================================================== -->
+
+<main class="article">
+
+    <h2 class="reveal">
+        The bigger question.
+    </h2>
+
+
+    <p class="reveal">
+
+        Contribution limits are supposed to restrict
+        how much influence one donor can exercise over
+        a political committee.
+
+    </p>
+
+
+    <p class="reveal">
+
+        But this case illustrates the tension between
+        individual contribution limits and the ability
+        of party committees to move money between themselves.
+
+    </p>
+
+
+    <p class="reveal">
+
+        Whatever one's view of the legality or intent
+        of the system, the path from Trump 47 to Guam
+        and then back to the national party shows how
+        complicated modern campaign finance can become.
+
+    </p>
+
+
+    <p class="big-question reveal">
+
+        Following the first donation isn't enough.
+
+    </p>
+
+
+    <p class="big-question reveal">
+
+        You have to follow where the money goes next.
+
+    </p>
+
+</main>
+
+
+
+<!-- ======================================================
+     END
+====================================================== -->
+
+<section class="end">
+
+    <div class="end-inner">
+
+
+        <div class="end-label">
+            TRUMP'S SECOND FAVORITE ISLAND
+        </div>
+
+
+        <h2 class="reveal">
+            Read the original reporting.
+        </h2>
+
+
+        <p class="reveal">
+
+            The original version contains the full written
+            investigation, annotations and source links.
+
+        </p>
+
+
+        <a
+            class="end-button"
+            href="https://zachkahn.substack.com/p/trumps-second-favorite-island"
+            target="_blank"
+            rel="noopener"
+        >
+            ORIGINAL ARTICLE ↗
+        </a>
+
+
+        <div class="end-credit">
+
+            REPORTING, WRITING & INTERACTIVE PRODUCTION
+            <br><br>
+            ZACH KAHN
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<script>
+
+/* =========================================================
+   DONOR DATA
+
+   These are the 115 donors individually named
+   in the published article.
+========================================================= */
+
+const donorGroups = [
+
+{
+    category:
+        "Cabinet Members & Political Appointees",
+
+    donors: [
+
+        "Linda McMahon",
+        "Kelly Loeffler",
+        "Scott Bessent",
+        "David MacNeil",
+        "John Phelan",
+        "Jacob Helberg",
+        "Josh Lobel",
+        "Elon Musk",
+        "Miriam Adelson",
+        "John Figueroa",
+        "Cody Campbell",
+        "Bryce McFerran",
+        "Dan Negrea",
+        "Tracy Bisignano"
+
+    ]
+},
+
+
+{
+    category:
+        "Ambassadors",
+
+    donors: [
+
+        "Duke Buchan",
+        "Benjamin Leon",
+        "Nicole McGraw",
+        "Dan Newlin",
+        "Howard Brodie",
+        "Charles Kushner",
+        "Joe Popolo",
+        "Melinda Hillebrand",
+        "Michael Kavoukjian",
+        "Peter Lamelas",
+        "Tilman Fertitta",
+        "John Blanchard",
+        "Kenneth Howery",
+        "Jamie McCourt",
+        "Woody Johnson",
+        "David T. Fischer",
+        "John Rakolta",
+        "Barbara Hale Thornhill",
+        "Kelly Craft"
+
+    ]
+},
+
+
+{
+    category:
+        "Kennedy Center Board Appointees",
+
+    donors: [
+
+        "Jose Fanjul",
+        "Patricia Duggan",
+        "Steve Wynn",
+        "Lynnette Friess",
+        "Kelcy Warren",
+        "Carl Lindner",
+        "Laura Ricketts",
+        "Jennifer Fischer"
+
+    ]
+},
+
+
+{
+    category:
+        "Crypto Investors",
+
+    donors: [
+
+        "Cameron Winklevoss",
+        "Tyler Winklevoss",
+        "JP Richardson",
+        "Gary Cardone",
+        "David Bailey"
+
+    ]
+},
+
+
+{
+    category:
+        "Miscellaneous Billionaires",
+
+    donors: [
+
+        "Robert Mercer",
+        "Roger Norman",
+        "Diane Hendricks",
+        "Kenny Troutt",
+        "Andrew Beal",
+        "Willis Johnson",
+        "Daniel Snyder",
+        "JW Childs",
+        "Lee R Anderson",
+        "Jesse Powell",
+        "William Foley",
+        "John Catsimatidis",
+        "Keith Wold",
+        "George Bishop",
+        "Bryan Sheffield",
+        "Thomas Peterffy",
+        "Bijan Tehrani",
+        "Denny Sanford",
+        "Christopher Goldsbury",
+        "Jeff Ishbia",
+        "Thomas Siebel",
+        "Robert Bigelow",
+        "Alex Cline",
+        "Cynthia Fisher",
+        "Jared Kushner",
+        "Jeffrey Sprecher",
+        "Geoffrey Palmer",
+        "John Ricketts",
+        "Phil Ruffin",
+        "John Paulson",
+        "Harold Hamm",
+        "Jimmy John Liautaud",
+        "Bernard Marcus",
+        "Marc Andreessen",
+        "John Schnatter",
+        "Arthur Demoulas",
+        "Robert Duggan",
+        "Daniel Friedkin",
+        "Phillip Frost",
+        "Herbert Wertheim",
+        "Gary Schottenstein",
+        "Nancy Hiles"
+
+    ]
+},
+
+
+{
+    category:
+        "Oil Moguls",
+
+    donors: [
+
+        "Carol Adams",
+        "Syed Anwar",
+        "Harold Courson",
+        "Alex Cranberg",
+        "Margaret Molleston",
+        "Adam Beren",
+        "Charles Saulsbury",
+        "Vicki Hollub",
+        "Doug Scharbauer",
+        "Hushang Ansary"
+
+    ]
+},
+
+
+{
+    category:
+        "Assorted Hangers-On",
+
+    donors: [
+
+        "Dana White",
+        "Tim Barnard",
+        "Barbara Gaby",
+        "Elizabeth Trump Grau",
+        "Ann Pallan",
+        "Deborah Magowan",
+        "John Breslow",
+        "Veronica Atkins",
+        "Carl Barney",
+        "David Marcus",
+        "Peggy Johnson",
+        "Trevor Milton",
+        "Chelsey Milton",
+        "Mark Determan",
+        "Mike Hodges",
+        "Brian Colleran",
+        "Daniel Parker"
+
+    ]
+}
+
+];
+
+
+
+/* =========================================================
+   BUILD DONOR LIST
+========================================================= */
+
+const donorContainer =
+    document.querySelector(
+        "#donorContainer"
+    );
+
+
+let overallNumber = 1;
+
+
+donorGroups.forEach(group => {
+
+
+    const section =
+        document.createElement(
+            "section"
+        );
+
+
+    section.className =
+        "donor-group";
+
+
+    const inner =
+        document.createElement(
+            "div"
+        );
+
+
+    inner.className =
+        "donor-group-inner";
+
+
+    const category =
+        document.createElement(
+            "div"
+        );
+
+
+    category.className =
+        "donor-category reveal";
+
+
+    category.innerHTML = `
+
+        <div class="donor-category-label">
+            THE DONORS
+        </div>
+
+        <h2>
+            ${group.category}
+        </h2>
+
+        <div class="donor-count">
+            ${group.donors.length}
+            named donors
+        </div>
+
+    `;
+
+
+    const names =
+        document.createElement(
+            "div"
+        );
+
+
+    group.donors.forEach(
+        donor => {
+
+
+            const row =
+                document.createElement(
+                    "div"
+                );
+
+
+            row.className =
+                "donor-name reveal";
+
+
+            row.innerHTML = `
+
+                <span>
+                    ${String(
+                        overallNumber
+                    ).padStart(
+                        3,
+                        "0"
+                    )}
+                </span>
+
+                <div>
+                    ${donor}
+                </div>
+
+            `;
+
+
+            names.appendChild(
+                row
+            );
+
+
+            overallNumber++;
+
+        }
+    );
+
+
+    inner.appendChild(
+        category
+    );
+
+
+    inner.appendChild(
+        names
+    );
+
+
+    section.appendChild(
+        inner
+    );
+
+
+    donorContainer.appendChild(
+        section
+    );
+
+});
+
+
+
+/* =========================================================
+   REVEAL OBSERVER
+
+   This runs AFTER donor rows have been generated,
+   so the donor names animate too.
+========================================================= */
+
+const revealElements =
+    document.querySelectorAll(
+        ".reveal, .zoom"
+    );
+
+
+const observer =
+    new IntersectionObserver(
+
+        entries => {
+
+            entries.forEach(
+                entry => {
+
+                    if (
+                        entry.isIntersecting
+                    ) {
+
+                        entry.target
+                            .classList
+                            .add(
+                                "visible"
+                            );
+
+                    }
+
+                    else {
+
+                        entry.target
+                            .classList
+                            .remove(
+                                "visible"
+                            );
+
+                    }
+
+                }
+            );
+
+        },
+
+        {
+            threshold: .12
+        }
+
+    );
+
+
+revealElements.forEach(
+    element => {
+
+        observer.observe(
+            element
+        );
+
+    }
+);
+
+
+
+/* =========================================================
+   MAP BOAT
+
+   Moves the boat along the SVG route.
+========================================================= */
+
+const mapStory =
+    document.querySelector(
+        "#mapStory"
+    );
+
+
+const routePath =
+    document.querySelector(
+        "#routePath"
+    );
+
+
+const mapBoat =
+    document.querySelector(
+        "#mapBoat"
+    );
+
+
+const mapMessage =
+    document.querySelector(
+        "#mapMessage"
+    );
+
+
+function updateMap() {
+
+
+    if (
+        !mapStory ||
+        !routePath ||
+        !mapBoat
+    ) {
+
+        return;
+
+    }
+
+
+    const rect =
+        mapStory
+            .getBoundingClientRect();
+
+
+    const scrollable =
+        mapStory.offsetHeight -
+        window.innerHeight;
+
+
+    let progress =
+        (-rect.top) /
+        scrollable;
+
+
+    progress =
+        Math.max(
+            0,
+            Math.min(
+                1,
+                progress
+            )
+        );
+
+
+    /*
+        Route is written from U.S.
+        to Guam.
+    */
+
+    const length =
+        routePath
+            .getTotalLength();
+
+
+    const point =
+        routePath
+            .getPointAtLength(
+                length *
+                progress
+            );
+
+
+    mapBoat.setAttribute(
+        "x",
+        point.x
+    );
+
+
+    mapBoat.setAttribute(
+        "y",
+        point.y - 12
+    );
+
+
+    /*
+        Reveal question near Guam.
+    */
+
+    let opacity =
+        (progress - .65) /
+        .22;
+
+
+    opacity =
+        Math.max(
+            0,
+            Math.min(
+                1,
+                opacity
+            )
+        );
+
+
+    mapMessage.style.opacity =
+        opacity;
+
+}
+
+
+
+/* =========================================================
+   STICKY FEC TEXT
+========================================================= */
+
+const stickyMoney =
+    document.querySelector(
+        "#stickyMoney"
+    );
+
+
+const stickyMoneyText =
+    document.querySelector(
+        "#stickyMoneyText"
+    );
+
+
+function updateStickyMoney() {
+
+
+    if (
+        !stickyMoney
+    ) {
+
+        return;
+
+    }
+
+
+    const rect =
+        stickyMoney
+            .getBoundingClientRect();
+
+
+    const scrollable =
+        stickyMoney.offsetHeight -
+        window.innerHeight;
+
+
+    let progress =
+        (-rect.top) /
+        scrollable;
+
+
+    progress =
+        Math.max(
+            0,
+            Math.min(
+                1,
+                progress
+            )
+        );
+
+
+    let opacity;
+
+
+    if (
+        progress < .25
+    ) {
+
+        opacity =
+            progress /
+            .25;
+
+    }
+
+    else if (
+        progress < .7
+    ) {
+
+        opacity = 1;
+
+    }
+
+    else {
+
+        opacity =
+            (1 - progress) /
+            .3;
+
+    }
+
+
+    opacity =
+        Math.max(
+            0,
+            Math.min(
+                1,
+                opacity
+            )
+        );
+
+
+    stickyMoneyText
+        .style
+        .opacity =
+        opacity;
+
+
+    const scale =
+        .88 +
+        (
+            opacity *
+            .12
+        );
+
+
+    stickyMoneyText
+        .style
+        .transform =
+        `scale(${scale})`;
+
+}
+
+
+
+/* =========================================================
+   READING PROGRESS
+========================================================= */
+
+const progressBar =
+    document.querySelector(
+        "#progress"
+    );
+
+
+function updateProgress() {
+
+
+    const scrollTop =
+        window.scrollY;
+
+
+    const totalHeight =
+        document
+            .documentElement
+            .scrollHeight -
+        window.innerHeight;
+
+
+    const percentage =
+        (
+            scrollTop /
+            totalHeight
+        ) *
+        100;
+
+
+    progressBar
+        .style
+        .width =
+        percentage + "%";
+
+}
+
+
+
+/* =========================================================
+   RUN SCROLL EFFECTS
+========================================================= */
+
+function updateEverything() {
+
+    updateMap();
+
+    updateStickyMoney();
+
+    updateProgress();
+
+}
+
+
+window.addEventListener(
+
+    "scroll",
+
+    updateEverything,
+
+    {
+        passive: true
+    }
+
+);
+
+
+window.addEventListener(
+
+    "resize",
+
+    updateEverything
+
+);
+
+
+updateEverything();
+
+
+</script>
+
+
+</body>
+
+</html>
