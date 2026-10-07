@@ -1,3148 +1,890 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Trump's Second Favorite Island | Zach Kahn</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trump's Second Favorite Island (With Another List) | Zach Kahn</title>
+<style>
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:#f5f1e8;color:#111;font-family:Georgia,"Times New Roman",serif;overflow-x:hidden}
+img{max-width:100%;display:block} .progress{position:fixed;z-index:9999;left:0;top:0;height:4px;width:0;background:#fff;mix-blend-mode:difference}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:40px 24px;position:relative;background:linear-gradient(rgba(0,0,0,.12),rgba(0,0,0,.78)),url("images/guambeach.jpg") center/cover}
+.hero-inner{max-width:1100px} .kicker,.eyebrow{font:700 11px/1.2 Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;opacity:.55}
+.hero h1{font:800 clamp(58px,9vw,132px)/.88 Arial,sans-serif;letter-spacing:-6px;margin:25px 0}
+.hero .dek{font-size:22px;line-height:1.5;max-width:760px;margin:0 auto} .byline{font:13px Arial,sans-serif;margin-top:25px}
+.original{display:inline-block;margin-top:32px;border:1px solid rgba(255,255,255,.65);border-radius:999px;padding:14px 22px;color:#fff;text-decoration:none;font:700 11px Arial,sans-serif;letter-spacing:2px}
+.story{max-width:730px;margin:auto;padding:110px 24px} .story-p{font-size:20px;line-height:1.82;margin:0 0 34px} .story-p.punch{font-size:34px;line-height:1.35;font-weight:bold;margin:90px 0}
+.story-heading{font:800 clamp(42px,6vw,72px)/.98 Arial,sans-serif;letter-spacing:-3px;margin:100px 0 38px}
+.reveal{opacity:0;transform:translateY(45px);transition:opacity .8s ease,transform .8s ease} .reveal.visible{opacity:1;transform:none}
+.photo{height:100vh;background:center/cover;position:relative} .photo:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.75))}
+.sticky{height:100vh;position:sticky;top:0;overflow:hidden} .map-story,.flow-story,.evidence-story{height:320vh;background:#071e2d;color:#fff}
+.media-title{position:absolute;z-index:5;top:7%;left:50%;transform:translateX(-50%);width:90%;text-align:center;font:800 clamp(34px,5vw,66px)/1 Arial,sans-serif;letter-spacing:-3px}
+.map-svg{width:100%;height:100%} .land{fill:#a9b39e;stroke:rgba(255,255,255,.25)} .map-label{fill:#fff;font:700 14px Arial,sans-serif;letter-spacing:2px} .ocean-label{fill:rgba(255,255,255,.38);font:13px Arial,sans-serif;letter-spacing:8px}
+.map-note{position:absolute;bottom:18px;left:20px;right:20px;font:9px Arial,sans-serif;letter-spacing:1px;opacity:.4}
+.checks-section{padding:130px 24px;background:#ebe7dc} .checks-copy{max-width:900px;margin:0 auto 65px;text-align:center} .checks-big,.checks-total{font:800 clamp(58px,9vw,120px)/.9 Arial,sans-serif;letter-spacing:-5px} .checks-copy p{font-size:19px}
+.check-grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(10,1fr);gap:7px} .check{aspect-ratio:1.6;background:#fff;border:1px solid rgba(0,0,0,.22);display:flex;align-items:center;justify-content:center;font:700 8px Arial,sans-serif;opacity:0;transform:scale(.55);transition:.3s} .check.show{opacity:1;transform:scale(1)} .checks-total{text-align:center;margin-top:85px}
+.flow-story{background:#090909} .flow-sticky{display:flex;align-items:center;justify-content:center;flex-direction:column} .flow-stage{width:min(1100px,92%);height:390px;position:relative}
+.flow-box{position:absolute;top:145px;width:190px;min-height:120px;border:1px solid rgba(255,255,255,.4);border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;font:700 14px Arial,sans-serif} .flow-box.left{left:0} .flow-box.middle{left:50%;transform:translateX(-50%)} .flow-box.right{right:0}
+.money-chip{position:absolute;left:35px;top:65px;width:120px;height:60px;background:#fff;color:#000;border-radius:5px;display:flex;align-items:center;justify-content:center;font:800 16px Arial,sans-serif;z-index:5} .flow-status{position:absolute;bottom:6%;width:90%;max-width:760px;text-align:center;font-size:21px;line-height:1.5}
+.evidence-story{background:#080808} .evidence-sticky{display:flex;align-items:center;justify-content:center} .evidence-image{width:min(1050px,94%);max-height:86vh;object-fit:contain;transition:.2s} .evidence-shade{position:absolute;inset:0;background:rgba(0,0,0,.72);opacity:0} .evidence-word{position:absolute;opacity:0;font:800 clamp(100px,18vw,250px)/.8 Arial,sans-serif;letter-spacing:-10px}
+.donor-intro{min-height:100vh;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:50px 24px} .donor-intro h2{max-width:1000px;font:800 clamp(55px,8vw,110px)/.9 Arial,sans-serif;letter-spacing:-5px}
+.donor-group{padding:120px 24px;border-bottom:1px solid #ccc6ba} .donor-group:nth-child(even){background:#e9e4d9} .donor-inner{max-width:1050px;margin:auto} .donor-heading{font:800 clamp(44px,7vw,85px)/.95 Arial,sans-serif;letter-spacing:-4px;margin:18px 0 65px}
+.donor{display:grid;grid-template-columns:65px 1fr;gap:12px;border-top:1px solid rgba(0,0,0,.14);padding:19px 0;font:20px/1.45 Arial,sans-serif} .donor-num{font-size:10px;letter-spacing:2px;opacity:.4}
+.conclusion{background:#111;color:#fff;padding:140px 24px} .conclusion-inner{max-width:950px;margin:auto} .conclusion-line{font:700 clamp(31px,5vw,65px)/1.1 Arial,sans-serif;letter-spacing:-2px;margin:80px 0}
+.end{min-height:85vh;background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.82)),url("images/guambeach.jpg") center/cover;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:50px 24px} .end h2{font:800 clamp(48px,8vw,100px)/.9 Arial,sans-serif;letter-spacing:-5px;max-width:900px}
+@media(max-width:700px){.hero h1{letter-spacing:-3px} .story-p{font-size:18px} .check-grid{grid-template-columns:repeat(5,1fr)} .flow-stage{width:135%;transform:scale(.72)} .flow-box{width:150px} .donor{grid-template-columns:42px 1fr;font-size:17px}}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 
 <style>
-
-/* =========================================================
-   GLOBAL
-========================================================= */
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    background: #f6f3ec;
-    color: #161616;
-    font-family: Georgia, "Times New Roman", serif;
-    overflow-x: hidden;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-a {
-    color: inherit;
-}
-
-.progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 4px;
-    background: white;
-    mix-blend-mode: difference;
-    z-index: 99999;
-}
-
-
-/* =========================================================
-   REVEALS
-========================================================= */
-
-.reveal {
-    opacity: 0;
-    transform: translateY(60px);
-    transition: opacity .9s ease, transform .9s ease;
-}
-
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.zoom {
-    opacity: 0;
-    transform: scale(.94);
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-.zoom.visible {
-    opacity: 1;
-    transform: scale(1);
-}
-
-
-/* =========================================================
-   HERO
-========================================================= */
-
-.hero {
-    min-height: 100vh;
-    position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 40px 25px;
-
-    text-align: center;
-    color: white;
-
-    background:
-        linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.78)),
-        url("images/guambeach.jpg");
-
-    background-size: cover;
-    background-position: center;
-}
-
-.hero-content {
-    max-width: 1150px;
-    position: relative;
-    z-index: 2;
-}
-
-.kicker {
-    margin-bottom: 30px;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-}
-
-.hero h1 {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    font-size: clamp(60px, 10vw, 145px);
-    line-height: .86;
-    letter-spacing: -6px;
-}
-
-.subtitle {
-    max-width: 760px;
-    margin: 40px auto 0;
-    font-size: 22px;
-    line-height: 1.55;
-}
-
-.byline {
-    margin-top: 25px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-}
-
-.story-button {
-    display: inline-block;
-    margin-top: 35px;
-    padding: 14px 23px;
-
-    border: 1px solid rgba(255,255,255,.65);
-    border-radius: 100px;
-
-    color: white;
-    text-decoration: none;
-
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 2px;
-
-    transition: .25s;
-}
-
-.story-button:hover {
-    background: white;
-    color: black;
-}
-
-.scroll-down {
-    position: absolute;
-    bottom: 25px;
-
-    font-family: Arial, sans-serif;
-    font-size: 10px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-
-    animation: bounce 1.5s infinite;
-}
-
-@keyframes bounce {
-    0%,100% { transform: translateY(0); }
-    50% { transform: translateY(9px); }
-}
-
-
-/* =========================================================
-   ARTICLE TEXT
-========================================================= */
-
-.article {
-    max-width: 720px;
-    margin: auto;
-    padding: 110px 25px;
-}
-
-.article p {
-    margin: 0 0 34px;
-    font-size: 20px;
-    line-height: 1.82;
-}
-
-.article h2 {
-    margin: 100px 0 35px;
-    font-family: Arial, sans-serif;
-    font-size: clamp(42px, 6vw, 70px);
-    line-height: 1;
-    letter-spacing: -3px;
-}
-
-.article h2:first-child {
-    margin-top: 0;
-}
-
-.big-text {
-    margin: 80px 0 !important;
-    font-size: 31px !important;
-    font-weight: bold;
-    line-height: 1.4 !important;
-}
-
-
-/* =========================================================
-   TEXT-ONLY BEATS
-========================================================= */
-
-.text-beat {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 80px 25px;
-
-    text-align: center;
-}
-
-.text-beat.dark {
-    background: #0d0d0d;
-    color: white;
-}
-
-.text-beat-inner {
-    max-width: 950px;
-}
-
-.eyebrow {
-    margin-bottom: 30px;
-
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-
-    opacity: .5;
-}
-
-.text-beat h2 {
-    margin: 0;
-
-    font-family: Arial, sans-serif;
-    font-size: clamp(52px, 8vw, 110px);
-    line-height: .93;
-    letter-spacing: -5px;
-}
-
-
-/* =========================================================
-   GUAM INTRO
-========================================================= */
-
-.guam-opening {
-    min-height: 130vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    text-align: center;
-}
-
-.guam-opening h2 {
-    margin: 0 0 90px;
-    font-size: clamp(90px, 15vw, 180px);
-}
-
-.guam-opening p {
-    margin: 42px 0;
-    font-size: 27px;
-}
-
-.guam-opening .punch {
-    margin-top: 100px;
-    font-size: 37px;
-    font-weight: bold;
-}
-
-
-/* =========================================================
-   PHOTOS
-========================================================= */
-
-.full-photo {
-    height: 100vh;
-    position: relative;
-
-    display: flex;
-    align-items: flex-end;
-
-    background-size: cover;
-    background-position: center;
-}
-
-.full-photo::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(transparent 30%, rgba(0,0,0,.85));
-}
-
-.photo-caption {
-    width: 100%;
-    max-width: 800px;
-
-    margin: auto;
-    padding: 50px 25px;
-
-    position: relative;
-    z-index: 2;
-
-    color: white;
-
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    line-height: 1.6;
-}
-
-
-/* =========================================================
-   MAP
-========================================================= */
-
-.map-story {
-    height: 350vh;
-    background: #071e2d;
-    color: white;
-}
-
-.map-sticky {
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    overflow: hidden;
-}
-
-.map-heading {
-    width: 90%;
-
-    position: absolute;
-    top: 7%;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    z-index: 5;
-    text-align: center;
-}
-
-.map-heading h2 {
-    margin: 0;
-
-    font-family: Arial, sans-serif;
-    font-size: clamp(34px, 5vw, 65px);
-    letter-spacing: -2px;
-}
-
-.map-heading p {
-    margin-top: 15px;
-    opacity: .65;
-}
-
-.map-svg {
-    width: 100%;
-    height: 100%;
-}
-
-.land {
-    fill: #a8b39c;
-    stroke: rgba(255,255,255,.3);
-    stroke-width: 1;
-}
-
-.map-label {
-    fill: white;
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.map-small {
-    fill: rgba(255,255,255,.45);
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    letter-spacing: 2px;
-}
-
-.route {
-    fill: none;
-    stroke: white;
-    stroke-width: 3;
-    stroke-dasharray: 10 10;
-    opacity: .65;
-}
-
-.guam-dot {
-    fill: white;
-    filter: drop-shadow(0 0 12px white);
-}
-
-.boat {
-    font-size: 42px;
-}
-
-.map-message {
-    width: 90%;
-    max-width: 800px;
-
-    position: absolute;
-    bottom: 7%;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    text-align: center;
-
-    font-size: 24px;
-    line-height: 1.5;
-
-    opacity: 0;
-}
-
-.map-note {
-    position: absolute;
-    bottom: 18px;
-    left: 20px;
-
-    font-family: Arial, sans-serif;
-    font-size: 9px;
-    letter-spacing: 1px;
-
-    opacity: .35;
-}
-
-
-/* =========================================================
-   MONEY YEARS
-========================================================= */
-
-.money-story {
-    background: #0d0d0d;
-    color: white;
-}
-
-.money-screen {
-    min-height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    padding: 50px 25px;
-
-    text-align: center;
-}
-
-.money-year {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    letter-spacing: 5px;
-}
-
-.money-number {
-    margin: 25px 0;
-
-    font-family: Arial, sans-serif;
-    font-size: clamp(100px, 18vw, 250px);
-    font-weight: bold;
-    line-height: .85;
-    letter-spacing: -10px;
-}
-
-.money-description {
-    max-width: 650px;
-    font-size: 23px;
-    line-height: 1.5;
-}
-
-
-/* =========================================================
-   193 CHECKS
-========================================================= */
-
-.check-story {
-    min-height: 150vh;
-
-    padding: 120px 25px;
-
-    background: #eeeae0;
-}
-
-.check-header {
-    max-width: 850px;
-    margin: 0 auto 70px;
-    text-align: center;
-}
-
-.check-header h2 {
-    margin: 0;
-
-    font-family: Arial, sans-serif;
-    font-size: clamp(50px, 8vw, 100px);
-    line-height: .9;
-    letter-spacing: -5px;
-}
-
-.check-header p {
-    margin-top: 30px;
-    font-size: 20px;
-}
-
-.check-grid {
-    max-width: 1100px;
-
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    gap: 7px;
-}
-
-.check {
-    aspect-ratio: 1.6;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid rgba(0,0,0,.25);
-
-    background: white;
-
-    font-family: Arial, sans-serif;
-    font-size: 8px;
-    font-weight: bold;
-
-    opacity: 0;
-    transform: scale(.5);
-
-    transition:
-        opacity .3s ease,
-        transform .3s ease;
-}
-
-.check.show {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.check-total {
-    margin-top: 90px;
-    text-align: center;
-}
-
-.check-total .math {
-    font-family: Arial, sans-serif;
-    font-size: clamp(32px,5vw,65px);
-    font-weight: bold;
-}
-
-.check-total .grand {
-    margin-top: 30px;
-
-    font-family: Arial, sans-serif;
-    font-size: clamp(85px,15vw,190px);
-    font-weight: bold;
-    line-height: .8;
-    letter-spacing: -8px;
-}
-
-
-/* =========================================================
-   GRAPHICS
-========================================================= */
-
-.graphic-section {
-    padding: 130px 25px;
-    background: #e9e6df;
-}
-
-.graphic {
-    max-width: 1100px;
-    margin: auto;
-}
-
-.graphic img {
-    width: 100%;
-    background: white;
-    box-shadow: 0 15px 60px rgba(0,0,0,.15);
-}
-
-.caption {
-    max-width: 720px;
-    margin: 24px auto 0;
-
-    color: #555;
-
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    line-height: 1.6;
-}
-
-
-/* =========================================================
-   TIMELINE
-========================================================= */
-
-.timeline {
-    padding: 150px 25px;
-    background: white;
-}
-
-.timeline-inner {
-    max-width: 850px;
-    margin: auto;
-}
-
-.timeline-title {
-    margin-bottom: 100px;
-
-    font-family: Arial, sans-serif;
-    font-size: clamp(50px,7vw,90px);
-    font-weight: bold;
-    letter-spacing: -4px;
-}
-
-.timeline-item {
-    position: relative;
-
-    padding:
-        0
-        0
-        100px
-        70px;
-}
-
-.timeline-item::before {
-    content: "";
-
-    width: 18px;
-    height: 18px;
-
-    position: absolute;
-    left: 0;
-    top: 4px;
-
-    border-radius: 50%;
-    background: #111;
-}
-
-.timeline-item::after {
-    content: "";
-
-    width: 2px;
-
-    position: absolute;
-    left: 8px;
-    top: 25px;
-    bottom: 0;
-
-    background: #ccc;
-}
-
-.timeline-item:last-child::after {
-    display: none;
-}
-
-.timeline-date {
-    margin-bottom: 12px;
-
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 3px;
-
-    opacity: .45;
-}
-
-.timeline-item h3 {
-    margin: 0 0 15px;
-
-    font-family: Arial, sans-serif;
-    font-size: 30px;
-}
-
-.timeline-item p {
-    margin: 0;
-
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-
-/* =========================================================
-   MONEY FLOW ANIMATION
-========================================================= */
-
-.flow-story {
-    height: 350vh;
-    background: #090909;
-    color: white;
-}
-
-.flow-sticky {
-    height: 100vh;
-
-    position: sticky;
-    top: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    overflow: hidden;
-}
-
-.flow-title {
-    position: absolute;
-    top: 7%;
-
-    width: 90%;
-
-    text-align: center;
-
-    font-family: Arial, sans-serif;
-    font-size: clamp(35px,5vw,65px);
-    font-weight: bold;
-    letter-spacing: -3px;
-}
-
-.flow-stage {
-    width: min(1100px,92%);
-    height: 400px;
-
-    position: relative;
-}
-
-.flow-box {
-    width: 190px;
-    min-height: 120px;
-
-    position: absolute;
-    top: 140px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 20px;
-
-    border: 1px solid rgba(255,255,255,.35);
-    border-radius: 10px;
-
-    text-align: center;
-
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.flow-box.one {
-    left: 0;
-}
-
-.flow-box.two {
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.flow-box.three {
-    right: 0;
-}
-
-.money-chip {
-    width: 120px;
-    height: 60px;
-
-    position: absolute;
-    left: 35px;
-    top: 50px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: white;
-    color: black;
-
-    border-radius: 5px;
-
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-
-    z-index: 10;
-}
-
-.flow-status {
-    position: absolute;
-    bottom: 4%;
-
-    width: 90%;
-    max-width: 800px;
-
-    text-align: center;
-
-    font-size: 22px;
-    line-height: 1.5;
-}
-
-
-/* =========================================================
-   FEC EVIDENCE
-========================================================= */
-
-.evidence-story {
-    height: 320vh;
-    background: #111;
-    color: white;
-}
-
-.evidence-sticky {
-    height: 100vh;
-    position: sticky;
-    top: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    overflow: hidden;
-}
-
-.evidence-image {
-    width: min(1050px,94%);
-    max-height: 85vh;
-    object-fit: contain;
-
-    transition:
-        transform .4s ease,
-        filter .4s ease,
-        opacity .4s ease;
-}
-
-.evidence-overlay {
-    position: absolute;
-    inset: 0;
-
-    background: rgba(0,0,0,.72);
-
-    opacity: 0;
-    pointer-events: none;
-}
-
-.evidence-callout {
-    position: absolute;
-
-    width: 90%;
-    max-width: 900px;
-
-    text-align: center;
-
-    font-family: Arial, sans-serif;
-    font-size: clamp(40px,7vw,90px);
-    font-weight: bold;
-    line-height: .95;
-    letter-spacing: -4px;
-
-    opacity: 0;
-}
-
-.evidence-small {
-    position: absolute;
-    bottom: 6%;
-
-    width: 90%;
-    max-width: 700px;
-
-    text-align: center;
-
-    font-size: 17px;
-    line-height: 1.6;
-
-    opacity: 0;
-}
-
-
-/* =========================================================
-   97.83
-========================================================= */
-
-.stat {
-    min-height: 120vh;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 50px 25px;
-
-    background: #050505;
-    color: white;
-
-    text-align: center;
-}
-
-.stat-number {
-    font-family: Arial, sans-serif;
-    font-size: clamp(105px,19vw,260px);
-    font-weight: bold;
-    line-height: .82;
-    letter-spacing: -12px;
-}
-
-.stat p {
-    max-width: 750px;
-    margin: 50px auto 0;
-
-    font-size: 25px;
-    line-height: 1.6;
-}
-
-
-/* =========================================================
-   DONOR CATEGORY COUNTER
-========================================================= */
-
-.category-story {
-    min-height: 100vh;
-
-    padding: 140px 25px;
-
-    background: #151515;
-    color: white;
-}
-
-.category-inner {
-    max-width: 1000px;
-    margin: auto;
-}
-
-.category-inner h2 {
-    margin: 0 0 80px;
-
-    font-family: Arial, sans-serif;
-    font-size: clamp(55px,8vw,105px);
-    line-height: .9;
-    letter-spacing: -5px;
-}
-
-.category-row {
-    display: grid;
-    grid-template-columns: 1fr auto;
-
-    padding: 27px 0;
-
-    border-top: 1px solid rgba(255,255,255,.2);
-
-    font-family: Arial, sans-serif;
-    font-size: clamp(18px,3vw,30px);
-}
-
-.category-count {
-    font-weight: bold;
-}
-
-.running-total {
-    margin-top: 100px;
-    text-align: center;
-}
-
-.running-total-number {
-    font-family: Arial, sans-serif;
-    font-size: clamp(120px,20vw,280px);
-    font-weight: bold;
-    line-height: .8;
-    letter-spacing: -12px;
-}
-
-.running-total-label {
-    margin-top: 25px;
-
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    letter-spacing: 4px;
-
-    opacity: .5;
-}
-
-
-/* =========================================================
-   DONOR LIST
-========================================================= */
-
-.donor-list {
-    background: #f4f1e9;
-}
-
-.donor-group {
-    padding: 130px 25px;
-    border-bottom: 1px solid #d0ccc2;
-}
-
-.donor-group:nth-child(even) {
-    background: #ebe7dd;
-}
-
-.donor-inner {
-    max-width: 1050px;
-    margin: auto;
-}
-
-.donor-label {
-    margin-bottom: 15px;
-
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    letter-spacing: 4px;
-
-    opacity: .45;
-}
-
-.donor-group h2 {
-    margin: 0 0 12px;
-
-    font-family: Arial, sans-serif;
-    font-size: clamp(45px,7vw,85px);
-    line-height: .95;
-    letter-spacing: -4px;
-}
-
-.donor-count {
-    margin-bottom: 70px;
-
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-
-    opacity: .5;
-}
-
-.donor {
-    display: grid;
-    grid-template-columns: 70px 1fr;
-
-    padding: 18px 0;
-
-    border-top: 1px solid rgba(0,0,0,.13);
-
-    font-family: Arial, sans-serif;
-    font-size: clamp(18px,2.4vw,26px);
-}
-
-.donor-num {
-    font-size: 11px;
-    letter-spacing: 2px;
-    opacity: .4;
-}
-
-
-/* =========================================================
-   CONCLUSION
-========================================================= */
-
-.conclusion {
-    padding: 150px 25px;
-
-    background: #111;
-    color: white;
-}
-
-.conclusion-inner {
-    max-width: 950px;
-    margin: auto;
-}
-
-.conclusion-line {
-    margin: 85px 0;
-
-    font-family: Arial, sans-serif;
-    font-size: clamp(40px,6vw,75px);
-    font-weight: bold;
-    line-height: 1.05;
-    letter-spacing: -3px;
-}
-
-
-/* =========================================================
-   END
-========================================================= */
-
-.end {
-    padding: 160px 25px;
-
-    background: #050505;
-    color: white;
-
-    text-align: center;
-}
-
-.end-inner {
-    max-width: 800px;
-    margin: auto;
-}
-
-.end-label {
-    margin-bottom: 40px;
-
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    letter-spacing: 5px;
-
-    opacity: .5;
-}
-
-.end h2 {
-    margin: 0;
-
-    font-family: Arial, sans-serif;
-    font-size: clamp(50px,8vw,100px);
-    line-height: .95;
-    letter-spacing: -5px;
-}
-
-.end p {
-    max-width: 650px;
-    margin: 35px auto;
-
-    font-size: 19px;
-    line-height: 1.7;
-}
-
-.end-credit {
-    margin-top: 100px;
-
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    line-height: 1.8;
-    letter-spacing: 2px;
-
-    opacity: .45;
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media(max-width:700px) {
-
-    .hero h1 {
-        letter-spacing: -3px;
-    }
-
-    .article p {
-        font-size: 18px;
-    }
-
-    .check-grid {
-        grid-template-columns: repeat(5,1fr);
-    }
-
-    .flow-stage {
-        transform: scale(.72);
-        width: 135%;
-    }
-
-    .flow-box {
-        width: 150px;
-    }
-
-    .donor {
-        grid-template-columns: 45px 1fr;
-    }
-
-    .running-total-number,
-    .stat-number {
-        letter-spacing: -7px;
-    }
-
-}
-
+/* REAL PACIFIC MAP */
+.real-map-story{height:360vh;background:#071e2d;color:#fff}
+.real-map-sticky{height:100vh;position:sticky;top:0;overflow:hidden}
+#realPacificMap{position:absolute;inset:0;z-index:1;background:#082638}
+.real-map-vignette{position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(rgba(0,0,0,.38),transparent 24%,transparent 70%,rgba(0,0,0,.5))}
+.real-map-copy{position:absolute;z-index:500;left:50%;top:7%;transform:translateX(-50%);width:min(900px,90%);text-align:center;text-shadow:0 2px 18px rgba(0,0,0,.75)}
+.real-map-copy h2{font:800 clamp(38px,5.5vw,72px)/.95 Arial,sans-serif;letter-spacing:-3px;margin:0}
+.real-map-copy p{font:16px/1.5 Arial,sans-serif;margin:16px 0 0}
+.real-map-bottom{position:absolute;z-index:500;bottom:4%;left:50%;transform:translateX(-50%);width:min(820px,90%);text-align:center;font:700 clamp(18px,2.4vw,28px)/1.35 Arial,sans-serif;text-shadow:0 2px 18px #000}
+.real-map-credit{position:absolute;z-index:500;bottom:9px;right:12px;font:9px Arial,sans-serif;opacity:.6}
+.leaflet-control-attribution{font-size:8px!important}
+.guam-pulse{width:18px;height:18px;border:3px solid white;border-radius:50%;box-shadow:0 0 0 0 rgba(255,255,255,.8);animation:guamPulse 1.6s infinite}
+@keyframes guamPulse{70%{box-shadow:0 0 0 20px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
+
+/* MONEY FLOOD */
+.money-flood{height:360vh;background:#080808;color:white}
+.money-flood-sticky{height:100vh;position:sticky;top:0;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.money-flood-title{position:absolute;z-index:20;top:6%;left:50%;transform:translateX(-50%);width:92%;text-align:center;font:800 clamp(36px,5vw,68px)/.95 Arial,sans-serif;letter-spacing:-3px}
+.money-network{position:relative;width:min(1120px,94%);height:64vh;margin-top:7vh}
+.money-node{position:absolute;z-index:12;width:180px;min-height:105px;border:1px solid rgba(255,255,255,.42);border-radius:12px;background:rgba(8,8,8,.82);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;font:800 13px/1.25 Arial,sans-serif}
+.money-node.donors{left:2%;top:43%}.money-node.guam{left:50%;top:43%;transform:translateX(-50%)}.money-node.rnc{right:2%;top:43%}
+.money-particle{position:absolute;z-index:8;width:48px;height:25px;border-radius:3px;background:#f4f1e8;color:#111;display:flex;align-items:center;justify-content:center;font:800 7px Arial,sans-serif;box-shadow:0 4px 15px rgba(0,0,0,.25);will-change:transform,opacity}
+.money-flood-stat{position:absolute;z-index:20;bottom:6%;left:50%;transform:translateX(-50%);width:92%;text-align:center}
+.money-flood-stat strong{display:block;font:800 clamp(65px,11vw,150px)/.8 Arial,sans-serif;letter-spacing:-7px}
+.money-flood-stat span{display:block;margin-top:20px;font:16px/1.4 Arial,sans-serif;opacity:.8}
+@media(max-width:700px){.money-node{width:115px;font-size:10px}.money-node.donors{left:0}.money-node.rnc{right:0}.money-particle{width:34px;height:20px;font-size:6px}}
 </style>
+
 </head>
-
-
 <body>
-
 <div class="progress" id="progress"></div>
 
-
-<!-- =====================================================
-     HERO
-===================================================== -->
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <div class="kicker">
-            Politics • Money • Guam
-        </div>
-
-        <h1>
-            Trump's Second Favorite Island
-        </h1>
-
-        <div class="subtitle">
-            Republican donors funnel millions through Guam,
-            spotlighting the need for campaign finance reform.
-        </div>
-
-        <div class="byline">
-            By Zach Kahn
-        </div>
-
-        <a
-            class="story-button"
-            href="https://zachkahn.substack.com/p/trumps-second-favorite-island"
-            target="_blank"
-            rel="noopener"
-        >
-            READ ORIGINAL ARTICLE ↗
-        </a>
-
-    </div>
-
-    <div class="scroll-down">
-        Scroll ↓
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     GUAM INTRO
-===================================================== -->
-
-<section class="article guam-opening">
-
-    <h2 class="reveal">
-        Guam.
-    </h2>
-
-    <p class="reveal">
-        A U.S. territory in Micronesia
-        that roughly 168,000 people call home.
-    </p>
-
-    <p class="reveal">
-        A World War II battleground
-        in the Western Pacific.
-    </p>
-
-    <p class="reveal">
-        An island known for its warm climate,
-        beaches and Chamorro culture.
-    </p>
-
-    <p class="punch reveal">
-        Turns out Guam also is a paradise
-        for the Republican Party.
-    </p>
-
-</section>
-
-
-<!-- =====================================================
-     GUAM PHOTO
-===================================================== -->
-
-<section
-    class="full-photo"
-    style="background-image:url('images/guam.jpg');"
->
-
-    <div class="photo-caption reveal">
-        Guam sits in the western Pacific,
-        thousands of miles from the continental United States.
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     TEXT
-===================================================== -->
-
-<section class="text-beat">
-
-    <div class="text-beat-inner">
-
-        <div class="eyebrow reveal">
-            First, some context
-        </div>
-
-        <h2 class="reveal">
-            Guam can't vote for president.
-        </h2>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     MAP
-===================================================== -->
-
-<section class="map-story" id="mapStory">
-
-<div class="map-sticky">
-
-    <div class="map-heading">
-
-        <h2>
-            Roughly 6,000 miles away.
-        </h2>
-
-        <p>
-            Scroll across the Pacific.
-        </p>
-
-    </div>
-
-
-    <svg
-        class="map-svg"
-        viewBox="0 0 1200 700"
-        preserveAspectRatio="xMidYMid slice"
-    >
-
-        <rect
-            width="1200"
-            height="700"
-            fill="#082638"
-        />
-
-
-        <!-- ASIA -->
-
-        <path
-            class="land"
-            d="
-            M0 100
-            L105 95
-            L165 125
-            L205 180
-            L220 230
-            L205 280
-            L170 315
-            L125 350
-            L65 370
-            L0 350 Z
-            "
-        />
-
-
-        <!-- JAPAN -->
-
-        <path
-            class="land"
-            d="
-            M205 180
-            L220 205
-            L226 235
-            L216 263
-            L205 245
-            L210 220
-            L195 200 Z
-            "
-        />
-
-
-        <!-- PHILIPPINES -->
-
-        <path
-            class="land"
-            d="
-            M185 330
-            L202 350
-            L195 375
-            L207 400
-            L195 425
-            L182 400
-            L188 375
-            L176 350 Z
-            "
-        />
-
-
-        <!-- AUSTRALIA -->
-
-        <path
-            class="land"
-            d="
-            M100 560
-            L215 530
-            L310 555
-            L360 610
-            L345 700
-            L90 700 Z
-            "
-        />
-
-
-        <!-- NORTH AMERICA -->
-
-        <path
-            class="land"
-            d="
-            M875 70
-            L1010 55
-            L1125 90
-            L1200 135
-            L1200 385
-            L1140 370
-            L1100 330
-            L1060 300
-            L1015 285
-            L975 250
-            L940 235
-            L915 195
-            L880 175
-            L850 125 Z
-            "
-        />
-
-
-        <!-- WESTERN U.S. -->
-
-        <path
-            class="land"
-            d="
-            M930 235
-            L1010 245
-            L1075 285
-            L1110 330
-            L1085 375
-            L1040 400
-            L995 380
-            L960 340
-            L935 295 Z
-            "
-        />
-
-
-        <!-- MEXICO -->
-
-        <path
-            class="land"
-            d="
-            M1025 390
-            L1090 370
-            L1120 395
-            L1105 430
-            L1080 460
-            L1050 440
-            L1015 410 Z
-            "
-        />
-
-
-        <!-- HAWAII -->
-
-        <circle class="land" cx="760" cy="400" r="5"/>
-        <circle class="land" cx="780" cy="408" r="4"/>
-        <circle class="land" cx="800" cy="416" r="5"/>
-
-
-        <!-- GUAM -->
-
-        <circle
-            class="guam-dot"
-            cx="300"
-            cy="390"
-            r="7"
-        />
-
-
-        <!-- LABELS -->
-
-        <text
-            x="300"
-            y="425"
-            text-anchor="middle"
-            class="map-label"
-        >
-            GUAM
-        </text>
-
-        <text
-            x="1010"
-            y="335"
-            text-anchor="middle"
-            class="map-label"
-        >
-            UNITED STATES
-        </text>
-
-        <text
-            x="760"
-            y="445"
-            class="map-small"
-        >
-            HAWAII
-        </text>
-
-        <text
-            x="155"
-            y="460"
-            class="map-small"
-        >
-            PHILIPPINES
-        </text>
-
-        <text
-            x="225"
-            y="170"
-            class="map-small"
-        >
-            JAPAN
-        </text>
-
-        <text
-            x="580"
-            y="350"
-            class="map-small"
-            style="font-size:18px;letter-spacing:10px;"
-        >
-            PACIFIC OCEAN
-        </text>
-
-
-        <!-- ROUTE -->
-
-        <path
-            id="routePath"
-            class="route"
-            d="M1010 330 Q650 180 300 390"
-        />
-
-
-        <text
-            id="mapBoat"
-            class="boat"
-            x="1010"
-            y="330"
-            text-anchor="middle"
-        >
-            ⛵
-        </text>
-
-    </svg>
-
-
-    <div
-        class="map-message"
-        id="mapMessage"
-    >
-        So why were wealthy political donors
-        sending exactly $10,000 each to
-        a party on this Pacific island?
-    </div>
-
-
-    <div class="map-note">
-        Simplified geographic illustration.
-        Route represents distance, not literal movement of funds.
-    </div>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">ZACH'S SUBSTACK</div>
+    <h1>Trump's Second Favorite Island (With Another List)</h1>
+    <div class="dek">Republican donors funnel millions through Guam, spotlighting the need for campaign finance reform</div>
+    <div class="byline">Zach Kahn<br>Jul 19, 2025</div>
+    <a class="original" href="https://zachkahn.substack.com/p/trumps-second-favorite-island" target="_blank" rel="noopener">READ ORIGINAL ARTICLE ↗</a>
+  </div>
+</header>
+
+<div class="story">
+<p class="story-p reveal punch">Guam.</p>
+<p class="story-p reveal">A U.S. territory in Micronesia that 168,000 people call home.</p>
+<p class="story-p reveal">A World War II battleground in the Western Pacific.</p>
+<p class="story-p reveal">An island known for its warm climate, beautiful beaches, and rich Chamorro culture.</p>
+<p class="story-p reveal">Turns out Guam also is a paradise for the Republican Party.</p>
+<p class="story-p reveal">Check out this chart:</p>
+<p class="story-p reveal">Fact: The Republican Party of Guam had one donor who gave $48 in 2023.1</p>
+<p class="story-p reveal">Fact: The Republican Party of Guam had 193 donors who gave $1,930,000 in 2024.2</p>
+<p class="story-p reveal">So, in 2024, 193 people donated $10,000 to a political party located 6,000 miles away from the mainland United States on an island that can’t vote for President.</p>
 
 </div>
-
+<section class="real-map-story" id="mapStory">
+  <div class="real-map-sticky">
+    <div id="realPacificMap"></div>
+    <div class="real-map-vignette"></div>
+    <div class="real-map-copy">
+      <h2>6,000 miles away from the mainland United States.</h2>
+      <p>Scroll to travel across the Pacific.</p>
+    </div>
+    <div class="real-map-bottom" id="realMapBottom">The mainland United States</div>
+    <div class="real-map-credit">Map: OpenStreetMap contributors • geographic reference: Natural Earth</div>
+  </div>
 </section>
-
-
-<!-- =====================================================
-     MONEY YEARS
-===================================================== -->
-
-<section class="money-story">
-
-    <div class="money-screen">
-
-        <div class="money-year reveal">
-            2023
-        </div>
-
-        <div class="money-number reveal">
-            $48
-        </div>
-
-        <div class="money-description reveal">
-            One donor to the Republican Party of Guam.
-        </div>
-
-    </div>
-
-
-    <div class="money-screen">
-
-        <div class="money-year reveal">
-            2024
-        </div>
-
-        <div class="money-number reveal">
-            $1.93M
-        </div>
-
-        <div class="money-description reveal">
-            193 donors.
-            <br><br>
-            Every one giving $10,000.
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     193 CHECKS
-===================================================== -->
-
-<section class="check-story" id="checkStory">
-
-    <div class="check-header">
-
-        <div class="eyebrow reveal">
-            Not one unusual contribution
-        </div>
-
-        <h2 class="reveal">
-            193 identical ones.
-        </h2>
-
-        <p class="reveal">
-            Each square below represents one $10,000 contribution.
-        </p>
-
-    </div>
-
-
-    <div
-        class="check-grid"
-        id="checkGrid"
-    ></div>
-
-
-    <div class="check-total">
-
-        <div class="math reveal">
-            193 × $10,000
-        </div>
-
-        <div class="grand reveal">
-            $1.93M
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     GRAPH
-===================================================== -->
-
-<section class="graphic-section">
-
-    <div class="graphic zoom">
-
-        <img
-            src="images/graph.jpg"
-            alt="GOP Guam donation chart"
-        >
-
-        <div class="caption">
-            GOP Guam went from one $48 donor in 2023
-            to 193 donors contributing $1.93 million in 2024.
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     QUESTION
-===================================================== -->
-
-<section class="text-beat dark">
-
-    <div class="text-beat-inner">
-
-        <div class="eyebrow reveal">
-            193 people. The exact same amount.
-        </div>
-
-        <h2 class="reveal">
-            What's going on here?
-        </h2>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     TIMELINE
-===================================================== -->
-
-<section class="timeline">
-
-<div class="timeline-inner">
-
-    <div class="timeline-title reveal">
-        Follow the sequence.
-    </div>
-
-
-    <div class="timeline-item reveal">
-
-        <div class="timeline-date">
-            2023
-        </div>
-
-        <h3>
-            Almost nothing.
-        </h3>
-
-        <p>
-            GOP Guam reports one donor contributing $48.
-        </p>
-
-    </div>
-
-
-    <div class="timeline-item reveal">
-
-        <div class="timeline-date">
-            FEBRUARY 14, 2024
-        </div>
-
-        <h3>
-            Jamie McCourt gives $10,000.
-        </h3>
-
-        <p>
-            Her contribution becomes the first of
-            193 identical $10,000 contributions that year.
-        </p>
-
-    </div>
-
-
-    <div class="timeline-item reveal">
-
-        <div class="timeline-date">
-            2024
-        </div>
-
-        <h3>
-            The contributions pile up.
-        </h3>
-
-        <p>
-            All 193 donors give through Trump 47 Committee Inc.,
-            a joint fundraising committee.
-        </p>
-
-    </div>
-
-
-    <div class="timeline-item reveal">
-
-        <div class="timeline-date">
-            NEXT
-        </div>
-
-        <h3>
-            The money moves again.
-        </h3>
-
-        <p>
-            FEC records show nearly all of GOP Guam's receipts
-            subsequently transferred to the RNC.
-        </p>
-
-    </div>
-
-
-    <div class="timeline-item reveal">
-
-        <div class="timeline-date">
-            THE FINDING
-        </div>
-
-        <h3>
-            97.83%.
-        </h3>
-
-        <p>
-            That's the share of GOP Guam's receipts
-            that the original investigation found was
-            transferred to the RNC.
-        </p>
-
-    </div>
+<div class="story">
+
+<p class="story-p reveal">What’s going on here? Why did all these people donate to GOP Guam?</p>
+<p class="story-p reveal">As you probably guessed, it’s not because they wanted a GOP majority on a remote island. Let’s take a deeper dive.</p>
+<h2 class="story-heading reveal">February 14, 2024</h2>
+<p class="story-p reveal">On February 14, 2024, Jamie McCourt – former LA Dodger CEO, high profile divorcee, and Trump mega-fundraiser – donated $10,000 to GOP Guam. (McCourt is an interesting character, check out this podcast).3</p>
+<p class="story-p reveal">McCourt’s was the first of 193 donations of $10,000 to the Republican Party of Guam in 2024. $10,000 is the maximum amount a single person can donate to a state party.4</p>
 
 </div>
-
+<section class="checks-section" id="checksSection">
+  <div class="checks-copy reveal">
+    <div class="eyebrow">193 DONORS</div>
+    <div class="checks-big">193 × $10,000</div>
+    <p>Scroll through the scale of the contributions.</p>
+  </div>
+  <div class="check-grid" id="checkGrid"></div>
+  <div class="checks-total reveal">$1,930,000</div>
 </section>
+<div class="story">
 
-
-<!-- =====================================================
-     MCCOURT TEXT
-===================================================== -->
-
-<main class="article">
-
-    <h2 class="reveal">
-        February 14, 2024
-    </h2>
-
-    <p class="reveal">
-        Jamie McCourt — former Los Angeles Dodgers CEO
-        and Trump fundraiser — donated $10,000 to GOP Guam.
-    </p>
-
-    <p class="reveal">
-        McCourt's contribution was the first of
-        193 donations of exactly $10,000 that the
-        Republican Party of Guam received in 2024.
-    </p>
-
-    <p class="reveal">
-        The $10,000 figure wasn't random.
-        It represented the annual individual contribution
-        limit to a state party committee at the time.
-    </p>
-
-    <p class="big-text reveal">
-        And all 193 contributions came through
-        Trump 47 Committee Inc.
-    </p>
-
-</main>
-
-
-<!-- =====================================================
-     TRUMP 47 GRAPHIC
-===================================================== -->
-
-<section class="graphic-section">
-
-    <div class="graphic zoom">
-
-        <img
-            src="images/graphic47.jpg"
-            alt="Trump 47 Committee graphic"
-        >
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     JFC TEXT
-===================================================== -->
-
-<main class="article">
-
-    <h2 class="reveal">
-        A group tip jar.
-    </h2>
-
-    <p class="reveal">
-        Trump 47 Committee Inc. was a joint fundraising
-        committee, or JFC.
-    </p>
-
-    <p class="reveal">
-        Instead of a donor writing separate checks to
-        several political committees, a JFC can accept
-        one large contribution and allocate portions
-        of it among participating committees.
-    </p>
-
-    <p class="reveal">
-        Under Trump 47's allocation structure,
-        portions first went to Trump's primary campaign,
-        Trump's general-election campaign,
-        Save America PAC and the Republican National Committee.
-    </p>
-
-    <p class="reveal">
-        Only after those allocations could money move
-        farther down the list to participating state
-        and territorial party committees.
-    </p>
-
-</main>
-
-
-<!-- =====================================================
-     MONEY FLOW
-===================================================== -->
-
-<section
-    class="flow-story"
-    id="flowStory"
->
-
-<div class="flow-sticky">
-
-    <div class="flow-title">
-        Watch one $10,000 contribution move.
-    </div>
-
-
-    <div class="flow-stage">
-
-        <div class="flow-box one">
-            DONOR / TRUMP 47
-        </div>
-
-        <div class="flow-box two">
-            REPUBLICAN PARTY<br>OF GUAM
-        </div>
-
-        <div class="flow-box three">
-            REPUBLICAN NATIONAL<br>COMMITTEE
-        </div>
-
-
-        <div
-            class="money-chip"
-            id="moneyChip"
-        >
-            $10,000
-        </div>
-
-    </div>
-
-
-    <div
-        class="flow-status"
-        id="flowStatus"
-    >
-        The donor gives through Trump 47.
-    </div>
+<p class="story-p reveal">All of the 193 donors, including McCourt, donated to GOP Guam through “Trump 47 Committee Inc.,” a joint fundraising committee.</p>
+<h2 class="story-heading reveal">What is the Trump 47 Committee Inc.?</h2>
+<p class="story-p reveal">Trump 47 Committee Inc. is a joint fundraising committee (JFC) – an entity that facilitates donations to many smaller political committees to fundraise all at once. Think of it as a group tip jar.</p>
+<p class="story-p reveal">Per The Washington Post, the maximum legally allowed donation to the Trump 47 Committee Inc. was $814,600. And here’s how that $814,600 was required to be allocated:</p>
+<p class="story-p reveal">The first $3,300 of any contribution went to Trump’s primary campaign, the next $3,300 went to Trump’s general election campaign, the following $5,000 went to Save America PAC, then up to $413,000 was allocated to the RNC.</p>
+<p class="story-p reveal">Based on the above chart, in order to donate to a state party like GOP Guam through the Trump 47 Committee Inc., you would have to donate the maximum amounts to Trump’s campaign, Save America PAC, and the RNC first. This adds up to $424,600.</p>
 
 </div>
-
+<section class="flow-story" id="flowStory">
+  <div class="sticky flow-sticky">
+    <div class="media-title">Follow one $10,000 allocation.</div>
+    <div class="flow-stage" id="flowStage">
+      <div class="flow-box left">TRUMP 47<br>COMMITTEE INC.</div>
+      <div class="flow-box middle">GOP<br>GUAM</div>
+      <div class="flow-box right">RNC</div>
+      <div class="money-chip" id="moneyChip">$10,000</div>
+    </div>
+    <div class="flow-status" id="flowStatus">The contribution enters through the joint fundraising committee.</div>
+  </div>
 </section>
+<div class="story">
 
-
-<!-- =====================================================
-     LIMITS
-===================================================== -->
-
-<section class="graphic-section">
-
-    <div class="graphic zoom">
-
-        <img
-            src="images/limits.jpg"
-            alt="FEC contribution limits"
-        >
-
-        <div class="caption">
-            Contribution limits depend on
-            the type of political committee receiving the money.
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     TEXT
-===================================================== -->
-
-<section class="text-beat">
-
-    <div class="text-beat-inner">
-
-        <div class="eyebrow reveal">
-            So ask the next question
-        </div>
-
-        <h2 class="reveal">
-            Why Guam?
-        </h2>
-
-    </div>
-
-</section>
-
-
-<main class="article">
-
-    <p class="reveal">
-        Based on Trump 47's allocation structure,
-        donors reaching state and territorial party accounts
-        had already filled earlier allocations to Trump's
-        campaign, Save America PAC and the RNC.
-    </p>
-
-    <p class="big-text reveal">
-        But receiving the money was only half the story.
-    </p>
-
-</main>
-
-
-<!-- =====================================================
-     WHERE DID IT GO
-===================================================== -->
-
-<section class="text-beat dark">
-
-    <div class="text-beat-inner">
-
-        <div class="eyebrow reveal">
-            The next reporting question
-        </div>
-
-        <h2 class="reveal">
-            Where did the money go?
-        </h2>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     FEC IMAGE FIRST
-===================================================== -->
-
-<section class="graphic-section">
-
-    <div class="graphic zoom">
-
-        <img
-            src="images/fec.jpg"
-            alt="Federal Election Commission records"
-        >
-
-        <div class="caption">
-            The FEC filings provide the paper trail.
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     FEC EVIDENCE EXPERIENCE
-===================================================== -->
-
-<section
-    class="evidence-story"
-    id="evidenceStory"
->
-
-<div class="evidence-sticky">
-
-    <img
-        class="evidence-image"
-        id="evidenceImage"
-        src="images/fec.jpg"
-        alt="FEC filing"
-    >
-
-
-    <div
-        class="evidence-overlay"
-        id="evidenceOverlay"
-    ></div>
-
-
-    <div
-        class="evidence-callout"
-        id="evidenceCallout"
-    >
-        The money didn't stay in Guam.
-    </div>
-
-
-    <div
-        class="evidence-small"
-        id="evidenceSmall"
-    >
-        The filings show transfers from the territorial
-        party to its affiliated national committee.
-    </div>
+<h2 class="story-heading reveal">Suspicions Confirmed</h2>
+<p class="story-p reveal">Knowing that there was some “other” reason why 193 people donated 10,000 to the Republican Party of Guam, I followed the money and found that 97.83% of the money that was donated to GOP Guam was subsequently transferred to the RNC.</p>
+<p class="story-p reveal">This is technically legal because unlimited transfers between political party committees is allowed.</p>
+<p class="story-p reveal">FEC contribution limits for 2025-2026 federal elections.</p>
+<p class="story-p reveal">That’s right, almost all of the money that was “supposed to go” to the Republican Party of Guam went right back to the RNC instead.</p>
+<p class="story-p reveal">FEC data showing the amount of money GOP Guam received in 2024 (Total Federal Receipts), and how much money GOP transferred to the RNC in 2024 (Transfers to Affiliated Committees). When you divide the two numbers, you get 0.9783, meaning that 97.83% of all the money GOP Guam received in 2024 was transferred to the RNC, the only affiliated committee to receive funds from GOP Guam.</p>
 
 </div>
-
+<section class="evidence-story" id="evidenceStory">
+  <div class="sticky evidence-sticky">
+    <img src="images/fec.jpg" id="evidenceImage" class="evidence-image" alt="FEC data used in the reporting">
+    <div class="evidence-shade" id="evidenceShade"></div>
+    <div class="evidence-word" id="evidenceWord">97.83%</div>
+  </div>
 </section>
-
-
-<!-- =====================================================
-     97.83
-===================================================== -->
-
-<section class="stat">
-
-    <div>
-
-        <div class="stat-number reveal">
-            97.83%
-        </div>
-
-        <p class="reveal">
-            of the money received by GOP Guam was
-            subsequently transferred to the Republican
-            National Committee, according to the
-            original analysis of FEC filings.
-        </p>
-
+<section class="money-flood" id="moneyFlood">
+  <div class="money-flood-sticky">
+    <div class="money-flood-title">Now watch the scale of the money movement.</div>
+    <div class="money-network" id="moneyNetwork">
+      <div class="money-node donors">193 DONORS</div>
+      <div class="money-node guam">REPUBLICAN PARTY<br>OF GUAM</div>
+      <div class="money-node rnc">RNC</div>
     </div>
-
+    <div class="money-flood-stat" id="moneyFloodStat">
+      <strong>$1.93M</strong>
+      <span>193 contributions of $10,000 each</span>
+    </div>
+  </div>
 </section>
+<div class="story">
 
-
-<!-- =====================================================
-     EXPLANATION
-===================================================== -->
-
-<main class="article">
-
-    <h2 class="reveal">
-        Suspicions confirmed.
-    </h2>
-
-    <p class="reveal">
-        The finding wasn't simply that wealthy donors
-        had contributed to a distant territorial party.
-    </p>
-
-    <p class="reveal">
-        It was that nearly all of the money received
-        by GOP Guam subsequently moved to the RNC.
-    </p>
-
-    <p class="reveal">
-        Federal rules permit transfers between affiliated
-        national, state and territorial party committees
-        without the same individual contribution ceiling
-        imposed when a person gives directly.
-    </p>
-
-    <p class="big-text reveal">
-        So why didn't these donors just give another
-        $10,000 directly to the RNC?
-    </p>
-
-    <p class="reveal">
-        Because the donors reaching GOP Guam through
-        Trump 47 had already filled the RNC allocation
-        that came earlier in the committee's distribution formula.
-    </p>
-
-</main>
-
-
-<!-- =====================================================
-     DONOR INTRO
-===================================================== -->
-
-<section class="text-beat dark">
-
-    <div class="text-beat-inner">
-
-        <div class="eyebrow reveal">
-            Then there's the question of who
-        </div>
-
-        <h2 class="reveal">
-            Follow the donors.
-        </h2>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     CATEGORY COUNTER
-===================================================== -->
-
-<section class="category-story">
-
-<div class="category-inner">
-
-    <h2 class="reveal">
-        The 115 people named in the investigation.
-    </h2>
-
-
-    <div class="category-row reveal">
-        <div>Cabinet Members & Political Appointees</div>
-        <div class="category-count">14</div>
-    </div>
-
-    <div class="category-row reveal">
-        <div>Ambassadors</div>
-        <div class="category-count">19</div>
-    </div>
-
-    <div class="category-row reveal">
-        <div>Kennedy Center Board Appointees</div>
-        <div class="category-count">8</div>
-    </div>
-
-    <div class="category-row reveal">
-        <div>Crypto Investors</div>
-        <div class="category-count">5</div>
-    </div>
-
-    <div class="category-row reveal">
-        <div>Miscellaneous Billionaires</div>
-        <div class="category-count">42</div>
-    </div>
-
-    <div class="category-row reveal">
-        <div>Oil Moguls</div>
-        <div class="category-count">10</div>
-    </div>
-
-    <div class="category-row reveal">
-        <div>Assorted Hangers-On</div>
-        <div class="category-count">17</div>
-    </div>
-
-
-    <div class="running-total">
-
-        <div
-            class="running-total-number reveal"
-        >
-            115
-        </div>
-
-        <div class="running-total-label reveal">
-            INDIVIDUALLY NAMED IN THE ORIGINAL STORY
-        </div>
-
-    </div>
-
+<p class="story-p reveal">Wait. But why didn’t they just donate that money to the RNC in the first place?</p>
+<p class="story-p reveal">Well, turns out that all of the people who donated to the Republican Party of Guam ALREADY REACHED THE LEGAL CONTRIBUTION LIMIT TO THE RNC.</p>
+<p class="story-p reveal">Again, per the chart above, they were already forced to max out their donations to the RNC in order to be eligible to donate to GOP state accounts when donating through the JFC.</p>
+<p class="story-p reveal">So essentially, through this loophole, 193 donors were able to funnel an extra $10,000 each to benefit the RNC. That’s $1,930,000 they weren’t supposed to give!</p>
+<p class="story-p reveal">Legal or not, it is pretty obvious that this isn’t right. Donation limits on national parties like the DNC and RNC are necessary because they prevent wealthy donors from exerting influence over national parties, which shape policies and impact the lives of Americans.</p>
+<p class="story-p reveal">Without donation limits, anyone with enough money can buy influence over either party’s policies and candidates.</p>
+<p class="story-p reveal punch">Politics turns into a pay-to-play game.</p>
+<p class="story-p reveal">And, well, judging by the list of donors who signed up for this scheme, it looks like it already has. The 193 donors include the following categories:</p>
 </div>
 
+<section class="donor-intro">
+  <h2 class="reveal">The 193 donors include the following categories:</h2>
 </section>
 
+<div class="donor-list">
 
-<!-- =====================================================
-     DONORS
-===================================================== -->
-
-<div
-    class="donor-list"
-    id="donorList"
-></div>
-
-
-<!-- =====================================================
-     115 VS 193
-===================================================== -->
-
-<section class="text-beat dark">
-
-    <div class="text-beat-inner">
-
-        <div class="eyebrow reveal">
-            115 names identified in the story
+    <section class="donor-group">
+      <div class="donor-inner">
+        <div class="eyebrow reveal">THE DONORS</div>
+        <h2 class="donor-heading reveal">Cabinet Members and Political Appointees</h2>
+        
+        <div class="donor reveal">
+          <div class="donor-num">001</div>
+          <div>Billionaire Linda McMahon, appointed United States Secretary of Education</div>
         </div>
-
-        <h2 class="reveal">
-            But 193 total donors.
-        </h2>
-
-    </div>
-
-</section>
-
-
-<section class="money-story">
-
-    <div class="money-screen">
-
-        <div class="money-year reveal">
-            193 DONORS
+        <div class="donor reveal">
+          <div class="donor-num">002</div>
+          <div>Billionaire Kelly Loeffler, appointed the 28th Administrator of the U.S. Small Business Administration</div>
         </div>
-
-        <div class="money-number reveal">
-            $1.93M
+        <div class="donor reveal">
+          <div class="donor-num">003</div>
+          <div>Billionaire Scott Bessent, appointed US Secretary of the Treasury</div>
         </div>
-
-        <div class="money-description reveal">
-            All routed through the same joint fundraising committee.
+        <div class="donor reveal">
+          <div class="donor-num">004</div>
+          <div>Billionaire David MacNeil, appointed Ambassador at Large for Industrial and Manufacturing Competitiveness</div>
         </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     CONCLUSION
-===================================================== -->
+        <div class="donor reveal">
+          <div class="donor-num">005</div>
+          <div>John Phelan, appointed Secretary of the Navy</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">006</div>
+          <div>Jacob Helberg, appointed Under Secretary of State (Economic Growth, Energy, and the Environment)</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">007</div>
+          <div>Josh Lobel, put on the President’s Intelligence Advisory Board</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">008</div>
+          <div>Billionaire Elon Musk, former head of DOGE</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">009</div>
+          <div>Billionaire Miriam Adelson, Trump’s nominee for US Antisemitism Envoy</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">010</div>
+          <div>John Figueroa, appointed Senior Advisor to the Secretary of Veterans Affairs</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">011</div>
+          <div>Billionaire Cody Campbell, appointed co-president of Trump’s college sports commission</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">012</div>
+          <div>Bryce McFerran, appointed Chief Banking Officer of EXIM</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">013</div>
+          <div>Dan Negrea, Former Special Representative for Commercial and Business Affairs</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">014</div>
+          <div>Near billionaire Tracy Bisignano, wife of Frank Bisignano, commissioner of the United States Social Security Administration</div>
+        </div>
+      </div>
+    </section>
+    <section class="donor-group">
+      <div class="donor-inner">
+        <div class="eyebrow reveal">THE DONORS</div>
+        <h2 class="donor-heading reveal">Ambassadors</h2>
+        
+        <div class="donor reveal">
+          <div class="donor-num">015</div>
+          <div>Duke Buchan, nominated by Trump as Ambassador to Morocco</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">016</div>
+          <div>Benjamin Leon, nominated by Trump as Ambassador to Spain</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">017</div>
+          <div>Nicole McGraw, nominated by Trump as Ambassador to Croatia</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">018</div>
+          <div>Dan Newlin, appointed Ambassador to Colombia</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">019</div>
+          <div>Howard Brodie, appointed Ambassador to Finland</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">020</div>
+          <div>Billionaire Charles Kushner, appointed Ambassador to France</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">021</div>
+          <div>Joe Popolo, nominated as the Ambassador to the Netherlands</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">022</div>
+          <div>Billionaire Melinda Hillebrand, nominated as Ambassador to Costa Rica</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">023</div>
+          <div>Michael Kavoukjian, nominated as Ambassador to Norway</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">024</div>
+          <div>Peter Lamelas, nominated as Ambassador to Argentina</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">025</div>
+          <div>Billionaire Tilman Fertitta, appointed US ambassador to Italy and San Marino</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">026</div>
+          <div>John Blanchard, husband of Lynda Blanchard, nominee for United States Ambassador to the United Nations’ Agencies for Food and Agriculture</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">027</div>
+          <div>Billionaire Kenneth Howery, nominated by Trump as Ambassador to Denmark</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">028</div>
+          <div>Billionaire Jamie McCourt, appointed Ambassador to France and Monaco in Trump’s first term</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">029</div>
+          <div>Billionaire Woody Johnson, appointed Ambassador to the UK in Trump’s first term</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">030</div>
+          <div>David T. Fischer, appointed Ambassador to Morocco in Trump’s first term</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">031</div>
+          <div>John Rakolta, appointed Ambassador to the UAE in Trump’s first term</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">032</div>
+          <div>Barbara Hale Thornhill, appointed Ambassador to Singapore in Trump’s first term</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">033</div>
+          <div>Billionaire Kelly Craft, appointed Ambassador to the United Nations in Trump’s first term</div>
+        </div>
+      </div>
+    </section>
+    <section class="donor-group">
+      <div class="donor-inner">
+        <div class="eyebrow reveal">THE DONORS</div>
+        <h2 class="donor-heading reveal">Kennedy Center Board Appointees</h2>
+        
+        <div class="donor reveal">
+          <div class="donor-num">034</div>
+          <div>Billionaire Jose Fanjul, whose wife, Emilia May Fanjul, appointed as a Member of the Board of Trustees of the John F. Kennedy Center for the Performing Arts</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">035</div>
+          <div>Billionaire Patricia Duggan, appointed as Member of the Board of Trustees of the John F. Kennedy Center for the Performing Arts</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">036</div>
+          <div>Billionaire Steve Wynn, whose wife, Andrea Wynn, appointed as Member of the Board of Trustees of the John F. Kennedy Center for the Performing Arts</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">037</div>
+          <div>Billionaire Lynnette Friess, appointed as Member of the Board of Trustees of the John F. Kennedy Center for the Performing Arts</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">038</div>
+          <div>Billionaire Kelcy Warren, appointed as Member of the Board of Trustees of the John F. Kennedy Center for the Performing Arts</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">039</div>
+          <div>Billionaire Carl Lindner, appointed as Member of the Board of Trustees of the John F. Kennedy Center for the Performing Arts</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">040</div>
+          <div>Billionaire Laura Ricketts, appointed as Member of the Board of Trustees of the John F. Kennedy Center for the Performing Arts.</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">041</div>
+          <div>Jennifer Fischer, appointed as Member of the Board of Trustees of the John F. Kennedy Center for the Performing Arts</div>
+        </div>
+      </div>
+    </section>
+    <section class="donor-group">
+      <div class="donor-inner">
+        <div class="eyebrow reveal">THE DONORS</div>
+        <h2 class="donor-heading reveal">Crypto Investors</h2>
+        
+        <div class="donor reveal">
+          <div class="donor-num">042</div>
+          <div>Billionaire Cameron Winklevoss, Crypto Summit Attendee</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">043</div>
+          <div>Billionaire Tyler Winklevoss, Crypto Summit Attendee</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">044</div>
+          <div>JP Richardson- Crypto Mogul</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">045</div>
+          <div>Gary Cardone- Crypto Mogul, brother of billionaire Grant Cardone</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">046</div>
+          <div>David Bailey, Trump’s Crypto Advisor</div>
+        </div>
+      </div>
+    </section>
+    <section class="donor-group">
+      <div class="donor-inner">
+        <div class="eyebrow reveal">THE DONORS</div>
+        <h2 class="donor-heading reveal">Miscellaneous Billionaires</h2>
+        
+        <div class="donor reveal">
+          <div class="donor-num">047</div>
+          <div>Robert Mercer- Hedge Fund, AI billionaire</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">048</div>
+          <div>Roger Norman- Real Estate billionaire</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">049</div>
+          <div>Diane Hendricks- Founder of ABC Supply</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">050</div>
+          <div>Kenny Troutt- Founder of Excel Communications</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">051</div>
+          <div>Andrew Beal- Founder of Beal Bank</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">052</div>
+          <div>Willis Johnson- Founder of Copart (vehicle salvage and auction company)</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">053</div>
+          <div>Daniel Snyder- Former owner of the Washington Commanders</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">054</div>
+          <div>JW Childs- Founder of JW Childs Associates</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">055</div>
+          <div>Lee R Anderson- Founder of API Inc.</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">056</div>
+          <div>Jesse Powell- Founder of Kraken (cryptocurrency exchange)</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">057</div>
+          <div>William Foley- Lawyer billionaire</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">058</div>
+          <div>John Catsimatidis- Gristedes and D'Agostino Supermarkets billionaire</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">059</div>
+          <div>Keith Wold- Johnson and Johnson inheritor</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">060</div>
+          <div>George Bishop- Oil billionaire</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">061</div>
+          <div>Bryan Sheffield- Oil billionaire</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">062</div>
+          <div>Thomas Peterffy- Founder of Interactive Brokers</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">063</div>
+          <div>Bijan Tehrani- Founder of Stake (gambling company)</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">064</div>
+          <div>Denny Sanford- Founder of First Premier Bank</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">065</div>
+          <div>Christopher Goldsbury- Pace Foods billionaire</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">066</div>
+          <div>Jeff Ishbia- Billionaire in Ishbia family</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">067</div>
+          <div>Thomas Siebel- Founder of Siebel Systems</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">068</div>
+          <div>Robert Bigelow- Founder of Bigelow Aerospace</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">069</div>
+          <div>Alex Cline- Son of Coal billionaire Christopher Cline</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">070</div>
+          <div>Cynthia Fisher- wife of billionaire Jim Koch</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">071</div>
+          <div>Jared Kushner,- Trump’s son-in-law and future billionaire per Forbes</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">072</div>
+          <div>Jeffrey Sprecher- Intercontinental Exchange billionaire</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">073</div>
+          <div>Geoffrey Palmer- Real Estate billionaire</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">074</div>
+          <div>John Ricketts- Founder of TD Ameritrade</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">075</div>
+          <div>Phil Ruffin- Circus Hotel and Casino billionaire</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">076</div>
+          <div>John Paulson- Hedge Fund billionaire</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">077</div>
+          <div>Harold Hamm- Oil billionaire</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">078</div>
+          <div>Jimmy John Liautaud- Founder of Jimmy John’s</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">079</div>
+          <div>Bernard Marcus- Founder of Home Depot</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">080</div>
+          <div>Marc Andreessen- Founder of Andreessen Horowitz</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">081</div>
+          <div>John Schnatter- Founder of Papa John’s</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">082</div>
+          <div>Arthur Demoulas- MarketBasket CEO, member of billionaire family</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">083</div>
+          <div>Robert Duggan, former CEO of Pharmacyclics</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">084</div>
+          <div>Daniel Friedkin, owner of the Premier League club Everton</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">085</div>
+          <div>Phillip Frost, former CEO and chairman of OPKO Health, Inc.</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">086</div>
+          <div>Herbert Wertheim, founder and president of Brain Power Incorporated</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">087</div>
+          <div>Gary Schottenstein, member of the Schottenstein family</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">088</div>
+          <div>Nancy Hiles, wife of billionaire and criminal Marcus Hiles</div>
+        </div>
+      </div>
+    </section>
+    <section class="donor-group">
+      <div class="donor-inner">
+        <div class="eyebrow reveal">THE DONORS</div>
+        <h2 class="donor-heading reveal">Oil Moguls</h2>
+        
+        <div class="donor reveal">
+          <div class="donor-num">089</div>
+          <div>Carol Adams- Oil And Gas Investor</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">090</div>
+          <div>Syed Anwar- Oil Mogul</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">091</div>
+          <div>Harold Courson- Oil Mogul</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">092</div>
+          <div>Alex Cranberg- Oil Mogul</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">093</div>
+          <div>Margaret Molleston- Oil Mogul</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">094</div>
+          <div>Adam Beren- Oil Mogul</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">095</div>
+          <div>Charles Saulsbury- Oil Mogul</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">096</div>
+          <div>Vicki Hollub- Oil Mogul</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">097</div>
+          <div>Doug Scharbauer- Oil Consultant</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">098</div>
+          <div>Hushang Ansary- former Oil Mogul</div>
+        </div>
+      </div>
+    </section>
+    <section class="donor-group">
+      <div class="donor-inner">
+        <div class="eyebrow reveal">THE DONORS</div>
+        <h2 class="donor-heading reveal">Assorted Hangers-On</h2>
+        
+        <div class="donor reveal">
+          <div class="donor-num">099</div>
+          <div>Dana White, who has secured a UFC Fight at White House 2026</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">100</div>
+          <div>Tim Barnard, who is profiting off a pipeline deal threatening pollution in Michigan</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">101</div>
+          <div>Barbara Gaby, Chairman of the Heritage Foundation, the group that created Project 2025</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">102</div>
+          <div>Elizabeth Trump Grau, sister of Donald Trump</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">103</div>
+          <div>Ann Pallan, wife of Robert Trump</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">104</div>
+          <div>Deborah Magowan- Wife of Former SF Giants Owner Peter Magowan</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">105</div>
+          <div>John Breslow- Former Hockey Minority Owner</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">106</div>
+          <div>Veronica Atkins- wife of Robert Atkins, founder of the Atkins diet</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">107</div>
+          <div>Carl Barney, Former For-Profit College Owner</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">108</div>
+          <div>David Marcus- Former President of PayPal</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">109</div>
+          <div>Peggy Johnson- Director of Fox Corporation</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">110</div>
+          <div>Trevor Milton, pardoned by Trump after being found guilty of securities and wire fraud</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">111</div>
+          <div>Chelsey Milton- Wife of Trevor Milton</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">112</div>
+          <div>Mark Determan, Federal Prosecutor at U. S. Department of Justice</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">113</div>
+          <div>Mike Hodges (learn more about him here)</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">114</div>
+          <div>Brian Colleran, founder of an Ohio nursing home tied to a Medicaid false claims case</div>
+        </div>
+        <div class="donor reveal">
+          <div class="donor-num">115</div>
+          <div>Daniel Parker, business partner of Brian Colleran</div>
+        </div>
+      </div>
+    </section>
+</div>
 
 <section class="conclusion">
-
-<div class="conclusion-inner">
-
-    <div class="conclusion-line reveal">
-        It's hard to see this list and not think
-        about how many donors intersect with political power.
-    </div>
-
-    <div class="conclusion-line reveal">
-        Cabinet officials.
-    </div>
-
-    <div class="conclusion-line reveal">
-        Ambassadors.
-    </div>
-
-    <div class="conclusion-line reveal">
-        Billionaires.
-    </div>
-
-    <div class="conclusion-line reveal">
-        Crypto investors.
-    </div>
-
-    <div class="conclusion-line reveal">
-        Oil executives and investors.
-    </div>
-
-    <div class="conclusion-line reveal">
-        The first contribution was only the beginning
-        of the paper trail.
-    </div>
-
-    <div class="conclusion-line reveal">
-        To understand the story, you had to follow
-        where the money went next.
-    </div>
-
-</div>
-
+  <div class="conclusion-inner">
+    <p class="conclusion-line reveal">You can find the full list of donors here.</p>
+<p class="conclusion-line reveal">So what’s the takeaway? It’s hard to see this list and not think about all of the people Trump put in government roles.</p>
+<p class="conclusion-line reveal">It’s hard to see this list and not think about how all these donors have already benefited massively from Trump’s policies favorable to the crypto and fossil fuel industries.</p>
+<p class="conclusion-line reveal">It’s hard to see this list and not think about all of Trump’s policies favorable to billionaires.</p>
+<p class="conclusion-line reveal">And it’s hard to see this list and not think about Mr. Milton’s pardon.</p>
+<p class="conclusion-line reveal">This loophole may have had a reason to exist, but it wasn’t this.</p>
+<p class="conclusion-line reveal">This entire situation also proves that America needs campaign finance reform in order to stop billionaires and insiders from buying influence.</p>
+<p class="conclusion-line reveal">It’s clear that the current laws designed to separate money and democracy are weak. The practice of unlimited donation transfers between state and national parties undermines the purpose of having donation limits in the first place.</p>
+  </div>
 </section>
-
-
-<!-- =====================================================
-     BEACH
-===================================================== -->
-
-<section
-    class="full-photo"
-    style="background-image:url('images/guambeach.jpg');"
->
-
-    <div class="photo-caption reveal">
-        Guam became an unlikely waypoint
-        in a much larger national campaign-finance story.
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     FINAL TEXT
-===================================================== -->
-
-<main class="article">
-
-    <h2 class="reveal">
-        The bigger question.
-    </h2>
-
-    <p class="reveal">
-        Contribution limits are intended to restrict
-        how much money one donor can give directly
-        to a political committee.
-    </p>
-
-    <p class="reveal">
-        But the Guam transactions illustrate the tension
-        between individual contribution limits and rules
-        allowing affiliated party committees to transfer
-        funds among themselves.
-    </p>
-
-    <p class="big-text reveal">
-        Following the first donation isn't enough.
-    </p>
-
-    <p class="big-text reveal">
-        You have to follow where the money goes next.
-    </p>
-
-</main>
-
-
-<!-- =====================================================
-     END
-===================================================== -->
 
 <section class="end">
-
-<div class="end-inner">
-
-    <div class="end-label">
-        TRUMP'S SECOND FAVORITE ISLAND
-    </div>
-
-    <h2 class="reveal">
-        Read the full investigation.
-    </h2>
-
-    <p class="reveal">
-        The original version contains the complete written
-        story, annotations and source links.
-    </p>
-
-    <a
-        class="story-button"
-        href="https://zachkahn.substack.com/p/trumps-second-favorite-island"
-        target="_blank"
-        rel="noopener"
-    >
-        READ ORIGINAL ARTICLE ↗
-    </a>
-
-    <div class="end-credit">
-        REPORTING, WRITING & INTERACTIVE PRODUCTION
-        <br><br>
-        ZACH KAHN
-    </div>
-
-</div>
-
+  <div>
+    <div class="eyebrow">TRUMP'S SECOND FAVORITE ISLAND</div>
+    <h2>Follow the money.</h2>
+    <a class="original" href="https://zachkahn.substack.com/p/trumps-second-favorite-island" target="_blank" rel="noopener">READ ORIGINAL ARTICLE ↗</a>
+  </div>
 </section>
 
-
 <script>
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
 
-/* =========================================================
-   DONOR DATA
-========================================================= */
+const grid=document.getElementById("checkGrid"),checks=[];
+for(let i=0;i<193;i++){const d=document.createElement("div");d.className="check";d.textContent="$10K";grid.appendChild(d);checks.push(d)}
+let checksDone=false;
+new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting&&!checksDone){checksDone=true;checks.forEach((c,i)=>setTimeout(()=>c.classList.add("show"),i*11))}}),{threshold:.15}).observe(document.getElementById("checksSection"));
 
-const donorGroups = [
+function sectionProgress(el){const r=el.getBoundingClientRect(),d=el.offsetHeight-innerHeight;return Math.max(0,Math.min(1,-r.top/d))}
+function update(){
+  const total=document.documentElement.scrollHeight-innerHeight;
+  document.getElementById("progress").style.width=((scrollY/total)*100)+"%";
 
-{
-category:"Cabinet Members & Political Appointees",
-donors:[
-"Linda McMahon",
-"Kelly Loeffler",
-"Scott Bessent",
-"David MacNeil",
-"John Phelan",
-"Jacob Helberg",
-"Josh Lobel",
-"Elon Musk",
-"Miriam Adelson",
-"John Figueroa",
-"Cody Campbell",
-"Bryce McFerran",
-"Dan Negrea",
-"Tracy Bisignano"
-]
-},
+  const map=document.getElementById("mapStory");
+  if(map){const p=sectionProgress(map),path=document.getElementById("routePath"),boat=document.getElementById("mapBoat"),len=path.getTotalLength(),pt=path.getPointAtLength(len*p);boat.setAttribute("x",pt.x);boat.setAttribute("y",pt.y-10)}
 
-{
-category:"Ambassadors",
-donors:[
-"Duke Buchan",
-"Benjamin Leon",
-"Nicole McGraw",
-"Dan Newlin",
-"Howard Brodie",
-"Charles Kushner",
-"Joe Popolo",
-"Melinda Hillebrand",
-"Michael Kavoukjian",
-"Peter Lamelas",
-"Tilman Fertitta",
-"John Blanchard",
-"Kenneth Howery",
-"Jamie McCourt",
-"Woody Johnson",
-"David T. Fischer",
-"John Rakolta",
-"Barbara Hale Thornhill",
-"Kelly Craft"
-]
-},
+  const flow=document.getElementById("flowStory");
+  if(flow){const p=sectionProgress(flow),stage=document.getElementById("flowStage"),chip=document.getElementById("moneyChip"),status=document.getElementById("flowStatus"),w=stage.offsetWidth,start=35,mid=w/2-60,end=w-155;let x;
+    if(p<.5){let q=p/.5;x=start+(mid-start)*q;status.textContent=q<.65?"The contribution enters through the joint fundraising committee.":"The $10,000 allocation reaches GOP Guam."}
+    else{let q=(p-.5)/.5;x=mid+(end-mid)*q;status.textContent=q<.65?"But the reporting follows the money farther.":"The funds move toward the RNC."}
+    chip.style.left=x+"px";
+  }
 
-{
-category:"Kennedy Center Board Appointees",
-donors:[
-"Jose Fanjul",
-"Patricia Duggan",
-"Steve Wynn",
-"Lynnette Friess",
-"Kelcy Warren",
-"Carl Lindner",
-"Laura Ricketts",
-"Jennifer Fischer"
-]
-},
+  const ev=document.getElementById("evidenceStory");
+  if(ev){const p=sectionProgress(ev),img=document.getElementById("evidenceImage"),shade=document.getElementById("evidenceShade"),word=document.getElementById("evidenceWord");
+    img.style.transform=`scale(${1+Math.min(p,.5)*.16})`;
+    shade.style.opacity=Math.max(0,(p-.35)/.35)*.72;
+    word.style.opacity=Math.max(0,Math.min(1,(p-.58)/.2));
+  }
+}
+addEventListener("scroll",update,{passive:true});addEventListener("resize",update);update();
+</script>
 
-{
-category:"Crypto Investors",
-donors:[
-"Cameron Winklevoss",
-"Tyler Winklevoss",
-"JP Richardson",
-"Gary Cardone",
-"David Bailey"
-]
-},
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+/* REAL GEOGRAPHIC MAP */
+const realMap = L.map('realPacificMap',{
+  zoomControl:false,
+  attributionControl:true,
+  scrollWheelZoom:false,
+  dragging:false,
+  doubleClickZoom:false,
+  boxZoom:false,
+  keyboard:false,
+  tap:false,
+  worldCopyJump:true
+}).setView([27,-128],3);
 
-{
-category:"Miscellaneous Billionaires",
-donors:[
-"Robert Mercer",
-"Roger Norman",
-"Diane Hendricks",
-"Kenny Troutt",
-"Andrew Beal",
-"Willis Johnson",
-"Daniel Snyder",
-"JW Childs",
-"Lee R Anderson",
-"Jesse Powell",
-"William Foley",
-"John Catsimatidis",
-"Keith Wold",
-"George Bishop",
-"Bryan Sheffield",
-"Thomas Peterffy",
-"Bijan Tehrani",
-"Denny Sanford",
-"Christopher Goldsbury",
-"Jeff Ishbia",
-"Thomas Siebel",
-"Robert Bigelow",
-"Alex Cline",
-"Cynthia Fisher",
-"Jared Kushner",
-"Jeffrey Sprecher",
-"Geoffrey Palmer",
-"John Ricketts",
-"Phil Ruffin",
-"John Paulson",
-"Harold Hamm",
-"Jimmy John Liautaud",
-"Bernard Marcus",
-"Marc Andreessen",
-"John Schnatter",
-"Arthur Demoulas",
-"Robert Duggan",
-"Daniel Friedkin",
-"Phillip Frost",
-"Herbert Wertheim",
-"Gary Schottenstein",
-"Nancy Hiles"
-]
-},
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+  maxZoom:6,
+  attribution:'&copy; OpenStreetMap contributors'
+}).addTo(realMap);
 
-{
-category:"Oil Moguls",
-donors:[
-"Carol Adams",
-"Syed Anwar",
-"Harold Courson",
-"Alex Cranberg",
-"Margaret Molleston",
-"Adam Beren",
-"Charles Saulsbury",
-"Vicki Hollub",
-"Doug Scharbauer",
-"Hushang Ansary"
-]
-},
+const usaPoint=[38.5,-122.5];
+const guamPoint=[13.4443,144.7937];
 
-{
-category:"Assorted Hangers-On",
-donors:[
-"Dana White",
-"Tim Barnard",
-"Barbara Gaby",
-"Elizabeth Trump Grau",
-"Ann Pallan",
-"Deborah Magowan",
-"John Breslow",
-"Veronica Atkins",
-"Carl Barney",
-"David Marcus",
-"Peggy Johnson",
-"Trevor Milton",
-"Chelsey Milton",
-"Mark Determan",
-"Mike Hodges",
-"Brian Colleran",
-"Daniel Parker"
-]
+const usaMarker=L.circleMarker(usaPoint,{
+  radius:7,color:'#fff',weight:3,fillColor:'#111',fillOpacity:1
+}).addTo(realMap).bindTooltip('MAINLAND UNITED STATES',{permanent:true,direction:'top',className:'map-tooltip'});
+
+const guamIcon=L.divIcon({className:'',html:'<div class="guam-pulse"></div>',iconSize:[18,18],iconAnchor:[9,9]});
+const guamMarker=L.marker(guamPoint,{icon:guamIcon}).addTo(realMap).bindTooltip('GUAM',{permanent:true,direction:'top'});
+
+const routeCoords=[];
+for(let i=0;i<=100;i++){
+  const t=i/100;
+  // Route travels westward across the Pacific; longitude is unwrapped past -180.
+  const lat=usaPoint[0]+(guamPoint[0]-usaPoint[0])*t + Math.sin(Math.PI*t)*11;
+  const guamUnwrapped=-215.2063;
+  const lng=usaPoint[1]+(guamUnwrapped-usaPoint[1])*t;
+  routeCoords.push([lat,lng]);
+}
+const routeLine=L.polyline(routeCoords,{color:'#fff',weight:3,dashArray:'8 10',opacity:.8}).addTo(realMap);
+const traveler=L.circleMarker(usaPoint,{radius:6,color:'#fff',weight:2,fillColor:'#fff',fillOpacity:1}).addTo(realMap);
+
+function interpRoute(p){
+  const n=(routeCoords.length-1)*p, i=Math.floor(n), f=n-i;
+  if(i>=routeCoords.length-1)return routeCoords[routeCoords.length-1];
+  return [
+    routeCoords[i][0]+(routeCoords[i+1][0]-routeCoords[i][0])*f,
+    routeCoords[i][1]+(routeCoords[i+1][1]-routeCoords[i][1])*f
+  ];
 }
 
-];
+function updateRealMap(){
+  const el=document.getElementById('mapStory');
+  if(!el)return;
+  const p=sectionProgress(el);
+  const pt=interpRoute(p);
+  traveler.setLatLng(pt);
 
+  // Pan smoothly from California to the western Pacific.
+  const startCenter=[28,-132], endCenter=[20,-205];
+  realMap.panTo([
+    startCenter[0]+(endCenter[0]-startCenter[0])*p,
+    startCenter[1]+(endCenter[1]-startCenter[1])*p
+  ],{animate:false});
 
-/* =========================================================
-   BUILD DONOR LIST
-========================================================= */
-
-const donorList =
-    document.querySelector("#donorList");
-
-let donorNumber = 1;
-
-donorGroups.forEach(group => {
-
-    const section =
-        document.createElement("section");
-
-    section.className =
-        "donor-group";
-
-    const inner =
-        document.createElement("div");
-
-    inner.className =
-        "donor-inner";
-
-    const heading =
-        document.createElement("div");
-
-    heading.className =
-        "reveal";
-
-    heading.innerHTML = `
-        <div class="donor-label">
-            THE DONORS
-        </div>
-
-        <h2>
-            ${group.category}
-        </h2>
-
-        <div class="donor-count">
-            ${group.donors.length} named donors
-        </div>
-    `;
-
-    inner.appendChild(heading);
-
-
-    group.donors.forEach(name => {
-
-        const row =
-            document.createElement("div");
-
-        row.className =
-            "donor reveal";
-
-        row.innerHTML = `
-            <div class="donor-num">
-                ${String(donorNumber).padStart(3,"0")}
-            </div>
-
-            <div>
-                ${name}
-            </div>
-        `;
-
-        inner.appendChild(row);
-
-        donorNumber++;
-
-    });
-
-    section.appendChild(inner);
-
-    donorList.appendChild(section);
-
-});
-
-
-/* =========================================================
-   CREATE 193 CHECKS
-========================================================= */
-
-const checkGrid =
-    document.querySelector("#checkGrid");
-
-const checks = [];
-
-for(let i = 0; i < 193; i++) {
-
-    const check =
-        document.createElement("div");
-
-    check.className =
-        "check";
-
-    check.textContent =
-        "$10K";
-
-    checkGrid.appendChild(check);
-
-    checks.push(check);
-
+  const label=document.getElementById('realMapBottom');
+  if(p<.28) label.textContent='The mainland United States';
+  else if(p<.72) label.textContent='Across the Pacific';
+  else label.textContent='Guam • 13.4443° N, 144.7937° E';
 }
 
-
-/* =========================================================
-   REVEALS
-========================================================= */
-
-const revealObserver =
-    new IntersectionObserver(
-
-        entries => {
-
-            entries.forEach(entry => {
-
-                if(entry.isIntersecting) {
-
-                    entry.target
-                        .classList
-                        .add("visible");
-
-                }
-
-            });
-
-        },
-
-        {
-            threshold:.12
-        }
-
-    );
-
-document
-    .querySelectorAll(".reveal,.zoom")
-    .forEach(el => {
-
-        revealObserver.observe(el);
-
-    });
-
-
-/* =========================================================
-   CHECK ANIMATION
-========================================================= */
-
-const checkStory =
-    document.querySelector("#checkStory");
-
-let checksAnimated = false;
-
-const checkObserver =
-    new IntersectionObserver(
-
-        entries => {
-
-            entries.forEach(entry => {
-
-                if(
-                    entry.isIntersecting &&
-                    !checksAnimated
-                ) {
-
-                    checksAnimated = true;
-
-                    checks.forEach(
-                        (check,index) => {
-
-                            setTimeout(
-                                () => {
-
-                                    check
-                                        .classList
-                                        .add("show");
-
-                                },
-
-                                index * 12
-                            );
-
-                        }
-                    );
-
-                }
-
-            });
-
-        },
-
-        {
-            threshold:.18
-        }
-
-    );
-
-checkObserver.observe(checkStory);
-
-
-/* =========================================================
-   MAP
-========================================================= */
-
-const mapStory =
-    document.querySelector("#mapStory");
-
-const routePath =
-    document.querySelector("#routePath");
-
-const mapBoat =
-    document.querySelector("#mapBoat");
-
-const mapMessage =
-    document.querySelector("#mapMessage");
-
-
-function updateMap() {
-
-    const rect =
-        mapStory.getBoundingClientRect();
-
-    const distance =
-        mapStory.offsetHeight -
-        window.innerHeight;
-
-    let progress =
-        -rect.top / distance;
-
-    progress =
-        Math.max(
-            0,
-            Math.min(1,progress)
-        );
-
-    const length =
-        routePath.getTotalLength();
-
-    const point =
-        routePath.getPointAtLength(
-            length * progress
-        );
-
-    mapBoat.setAttribute(
-        "x",
-        point.x
-    );
-
-    mapBoat.setAttribute(
-        "y",
-        point.y - 10
-    );
-
-    let opacity =
-        (progress - .65) / .2;
-
-    opacity =
-        Math.max(
-            0,
-            Math.min(1,opacity)
-        );
-
-    mapMessage.style.opacity =
-        opacity;
-
+/* MONEY PARTICLES */
+const network=document.getElementById('moneyNetwork');
+const particles=[];
+for(let i=0;i<64;i++){
+  const d=document.createElement('div');
+  d.className='money-particle';
+  d.textContent='$10K';
+  network.appendChild(d);
+  particles.push(d);
 }
 
+function updateMoneyFlood(){
+  const sec=document.getElementById('moneyFlood');
+  if(!sec)return;
+  const p=sectionProgress(sec);
+  const w=network.clientWidth,h=network.clientHeight;
+  const donorX=w*.08, guamX=w*.50, rncX=w*.88, y=h*.48;
 
-/* =========================================================
-   MONEY FLOW
-========================================================= */
+  particles.forEach((el,i)=>{
+    const delay=(i/particles.length)*.28;
+    let q=(p-delay)/.72;
+    q=Math.max(0,Math.min(1,q));
 
-const flowStory =
-    document.querySelector("#flowStory");
+    let x,y2,opacity= q<=0 ? 0 : 1;
+    const jitterX=((i%8)-3.5)*7;
+    const jitterY=((Math.floor(i/8)%8)-3.5)*5;
 
-const moneyChip =
-    document.querySelector("#moneyChip");
-
-const flowStatus =
-    document.querySelector("#flowStatus");
-
-
-function updateFlow() {
-
-    const rect =
-        flowStory.getBoundingClientRect();
-
-    const distance =
-        flowStory.offsetHeight -
-        window.innerHeight;
-
-    let progress =
-        -rect.top / distance;
-
-    progress =
-        Math.max(
-            0,
-            Math.min(1,progress)
-        );
-
-
-    const stage =
-        document.querySelector(".flow-stage");
-
-    const stageWidth =
-        stage.offsetWidth;
-
-
-    const startX = 35;
-
-    const middleX =
-        stageWidth / 2 - 60;
-
-    const endX =
-        stageWidth - 155;
-
-
-    let x;
-
-
-    if(progress < .5) {
-
-        const local =
-            progress / .5;
-
-        x =
-            startX +
-            (middleX - startX) *
-            local;
-
-        flowStatus.textContent =
-            local < .65
-            ?
-            "The donor gives through Trump 47."
-            :
-            "A $10,000 allocation reaches GOP Guam.";
-
+    if(q<.52){
+      const t=q/.52;
+      x=donorX+(guamX-donorX)*t+jitterX*(1-t);
+      y2=y+jitterY*(1-t)-Math.sin(Math.PI*t)*55;
+    }else{
+      const t=(q-.52)/.48;
+      x=guamX+(rncX-guamX)*t;
+      y2=y-Math.sin(Math.PI*t)*45;
     }
 
-    else {
+    el.style.opacity=opacity;
+    el.style.transform=`translate(${x-24}px,${y2-12}px) scale(${.7+q*.3})`;
+  });
 
-        const local =
-            (progress - .5) / .5;
-
-        x =
-            middleX +
-            (endX - middleX) *
-            local;
-
-        flowStatus.textContent =
-            local < .65
-            ?
-            "But the money doesn't stop there."
-            :
-            "The funds move toward the RNC.";
-
-    }
-
-
-    moneyChip.style.left =
-        x + "px";
-
+  const stat=document.getElementById('moneyFloodStat');
+  if(p<.45){
+    stat.querySelector('strong').textContent='$1.93M';
+    stat.querySelector('span').textContent='193 contributions of $10,000 each';
+  }else if(p<.75){
+    stat.querySelector('strong').textContent='GUAM';
+    stat.querySelector('span').textContent='The money reaches the territorial party.';
+  }else{
+    stat.querySelector('strong').textContent='97.83%';
+    stat.querySelector('span').textContent='The reporting found nearly all of GOP Guam’s receipts were subsequently transferred to the RNC.';
+  }
 }
 
-
-/* =========================================================
-   FEC EVIDENCE
-========================================================= */
-
-const evidenceStory =
-    document.querySelector("#evidenceStory");
-
-const evidenceImage =
-    document.querySelector("#evidenceImage");
-
-const evidenceOverlay =
-    document.querySelector("#evidenceOverlay");
-
-const evidenceCallout =
-    document.querySelector("#evidenceCallout");
-
-const evidenceSmall =
-    document.querySelector("#evidenceSmall");
-
-
-function updateEvidence() {
-
-    const rect =
-        evidenceStory.getBoundingClientRect();
-
-    const distance =
-        evidenceStory.offsetHeight -
-        window.innerHeight;
-
-    let progress =
-        -rect.top / distance;
-
-    progress =
-        Math.max(
-            0,
-            Math.min(1,progress)
-        );
-
-
-    if(progress < .3) {
-
-        const local =
-            progress / .3;
-
-        evidenceImage.style.transform =
-            `scale(${1 + local * .08})`;
-
-        evidenceOverlay.style.opacity =
-            0;
-
-        evidenceCallout.style.opacity =
-            0;
-
-        evidenceSmall.style.opacity =
-            0;
-
-    }
-
-    else if(progress < .65) {
-
-        const local =
-            (progress - .3) / .35;
-
-        evidenceImage.style.transform =
-            "scale(1.08)";
-
-        evidenceOverlay.style.opacity =
-            local * .7;
-
-        evidenceCallout.style.opacity =
-            local;
-
-        evidenceSmall.style.opacity =
-            0;
-
-    }
-
-    else {
-
-        const local =
-            (progress - .65) / .35;
-
-        evidenceOverlay.style.opacity =
-            .7;
-
-        evidenceCallout.style.opacity =
-            1;
-
-        evidenceSmall.style.opacity =
-            local;
-
-    }
-
-}
-
-
-/* =========================================================
-   PROGRESS BAR
-========================================================= */
-
-const progressBar =
-    document.querySelector("#progress");
-
-
-function updateProgress() {
-
-    const total =
-        document.documentElement.scrollHeight -
-        window.innerHeight;
-
-    const percentage =
-        (window.scrollY / total) * 100;
-
-    progressBar.style.width =
-        percentage + "%";
-
-}
-
-
-/* =========================================================
-   MASTER SCROLL
-========================================================= */
-
-function updateEverything() {
-
-    updateMap();
-    updateFlow();
-    updateEvidence();
-    updateProgress();
-
-}
-
-
-window.addEventListener(
-    "scroll",
-    updateEverything,
-    {passive:true}
-);
-
-window.addEventListener(
-    "resize",
-    updateEverything
-);
-
-updateEverything();
-
+addEventListener('scroll',()=>{updateRealMap();updateMoneyFlood()},{passive:true});
+addEventListener('resize',()=>{realMap.invalidateSize();updateRealMap();updateMoneyFlood()});
+setTimeout(()=>{realMap.invalidateSize();updateRealMap();updateMoneyFlood()},200);
 </script>
 
 </body>
